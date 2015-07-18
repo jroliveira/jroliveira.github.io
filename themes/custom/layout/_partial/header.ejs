@@ -1,0 +1,21 @@
+<section class="header">
+  <div class="row" style="margin-bottom: 4rem; font-size: 0.8em;">
+    <div class="twelve columns" style="text-align: right;">
+      <% config.language.filter(lang => lang != "default").forEach(function(lang, pos) { %>
+        <% if (pos % 2 != 0) { %>
+          <small>&nbsp; | &nbsp;</small>
+        <% } %>
+
+        <% if (page.lang == lang && !is_tag()) { %>
+          <a href="/<%= lang %>/" style="text-transform: uppercase; text-decoration: underline;"><%= lang %></a>
+        <% } else { %>
+          <a href="/<%= lang %>/" style="text-transform: uppercase;"><%= lang %></a>
+        <% } %>
+      <% }) %>
+    </div>
+  </div>
+
+  <h2 class="title">
+    <a href="/"><%= config.title %></a>
+  </h2>
+</section>

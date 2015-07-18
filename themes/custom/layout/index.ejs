@@ -1,0 +1,15 @@
+<h4>
+  <%= __('articles') %>
+</h4>
+
+<% site
+    .posts
+    .filter((post, pos) => site.posts
+      .map(item => item.date.format())
+      .indexOf(post.date.format()) == pos)
+    .sort('-date')
+    .each(function(post) { %>
+      
+  <%- partial('_partial/post/resume', {post: post}) %>
+
+<% }) %>

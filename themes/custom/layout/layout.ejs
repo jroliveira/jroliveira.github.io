@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Cache-Control" content="max-age=604800">
+
+  <%
+    var title = '';
+    if (page.title) {
+      title = `${page.title} ~ `;
+    } else if (is_tag()) {
+      title = `${page.tag} ~ `;
+    }
+    title += config.title;
+
+    var type = page.title ? 'article' : 'website';
+    var description = page.description || config.description;
+    var tags = page.tags ? page.tags.map(tag => tag.name) : ['delphi', 'php', 'csharp'];
+  %>
+
+  <title>
+    <%= title %>
+  </title>
+
+  <meta name="viewport" content="width=device-width">
+  <meta name="author" content="<%= config.author %>">
+  <meta name="title" content="<%= title %>">
+  <meta name="description" content="<%= description %>" />
+  <meta name="keywords" content="<%= tags.join(',') %>" />
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="transparent">
+
+  <meta property="og:type" content="<%= type %>">
+  <meta property="og:site_name" content="<%= config.title %>" />
+  <meta property="og:url" content="<%= config.url %>">
+  <meta property="og:title" content="<%= title %>">
+  <meta property="og:description" content="<%= description %>">
+
+  <link rel="icon" href="<%= config.favicon %>" async>
+  <link rel="manifest" href="/manifest.json" async>
+  <link rel="stylesheet" href="/css/style.css" media="all" async>
+
+  <%- partial('_widget/google-analytics') %>
+</head>
+
+<body>
+  <div class="container">
+    <%- partial('_partial/header') %>
+
+    <%- body %>
+
+    <%- partial('_widget/disqus-comments') %>
+    <%- partial('_partial/footer') %>
+
+    <noscript>
+      <p>Please enable JavaScript on your browser</p>
+    </noscript>
+
+    <script async defer>
+      if ('serviceWorker' in navigator) {
+        navigator
+          .serviceWorker
+          .register('/service-worker.js')
+          .catch(console.warn);
+      }
+
+    </script>
+  </div>
+</body>
+
+</html>

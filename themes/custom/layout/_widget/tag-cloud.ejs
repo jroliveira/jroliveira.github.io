@@ -1,0 +1,5 @@
+<div>
+  <% site.tags.each(function(tag){ %>
+    <a href="/tags/<%= tag.name.replace(' ', '-') %>/" style="font-size:<%= (tag.length * 4) + 80 %>%"><%= tag.name %> (<%= tag.posts.filter((post, pos) => tag.posts.map(item => item.date.format()).indexOf(post.date.format()) == pos).length %>)</a>&nbsp;
+  <% }) %>
+</div>

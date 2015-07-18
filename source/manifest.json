@@ -1,0 +1,15 @@
+{
+  "name": "Junior Oliveira",
+  "short_name": "Jr",
+  "description": "Blog pessoal com assuntos dedicados a desenvolvimento de software nas linguagens de programação C Sharp, Delphi, ASP .NET, PHP e Javascript.",
+  "theme_color": "#C1A8B2",
+  "display": "standalone",
+  "background_color": "#C1A8B2",
+  "start_url": "/",
+  "scope": "/",
+  "icons": [{
+    "src": "/favicon.png",
+    "type": "image/png",
+    "sizes": "128x128"
+  }]
+}

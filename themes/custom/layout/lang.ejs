@@ -1,0 +1,7 @@
+<h4>
+  <%= page.title %>
+</h4>
+
+<% site.posts.filter(post => post.lang == page.lang).sort('-date').forEach(function(post) { %>
+  <%- partial('_partial/post/resume', {post: post}) %>
+<% }) %>
