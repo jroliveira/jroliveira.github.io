@@ -27,28 +27,28 @@
     "node": ">=8.9.0"
   },
   "hexo": {
-    "version": "4.2.0"
+    "version": "4.2.1"
   },
   "dependencies": {
     "Skeleton-Stylus": "github:johngerome/Skeleton-Stylus",
     "font-awesome-stylus": "^4.7.1",
-    "hexo": "^4.0.0",
+    "hexo": "^4.2.1",
     "hexo-all-minifier": "^0.5.3",
-    "hexo-deployer-git": "^2.0.0",
-    "hexo-generator-feed": "^2.0.0",
-    "hexo-generator-sitemap": "^1.2.0",
+    "hexo-deployer-git": "^2.1.0",
+    "hexo-generator-feed": "^2.2.0",
+    "hexo-generator-sitemap": "^2.0.0",
     "hexo-generator-tag": "^1.0.0",
     "hexo-renderer-ejs": "^1.0.0",
-    "hexo-renderer-marked": "^2.0.0",
+    "hexo-renderer-marked": "^3.0.0",
     "hexo-renderer-stylus": "^1.1.0",
     "hexo-server": "^1.0.0",
     "normalize-styl": "^4.1.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "8.0.0",
-    "@commitlint/config-conventional": "8.0.0",
-    "husky": "3.0.0",
-    "standard-version": "6.0.0"
+    "@commitlint/cli": "9.1.1",
+    "@commitlint/config-conventional": "9.1.1",
+    "husky": "4.2.5",
+    "standard-version": "8.0.2"
   },
   "husky": {
     "hooks": {
