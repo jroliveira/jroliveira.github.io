@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jroliveira.net/pt/csharp-8/</loc>
+    
+    <lastmod>2020-09-06T17:40:54.872Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://jroliveira.net/pt/csharp-7/</loc>
     
     <lastmod>2020-07-19T15:15:39.330Z</lastmod>
@@ -16,14 +23,14 @@
   </url>
   
   <url>
-    <loc>https://jroliveira.net/tdd-jokenpo/index.html</loc>
+    <loc>https://jroliveira.net/tdd/index.html</loc>
     
     <lastmod>2020-07-17T22:37:41.958Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jroliveira.net/tdd/index.html</loc>
+    <loc>https://jroliveira.net/tdd-jokenpo/index.html</loc>
     
     <lastmod>2020-07-17T22:37:41.958Z</lastmod>
     
@@ -226,14 +233,14 @@
   </url>
   
   <url>
-    <loc>https://jroliveira.net/pt/consumindo-datasnap-server-com-php/</loc>
+    <loc>https://jroliveira.net/pt/garbage-collector-no-delphi-parte-ii/</loc>
     
     <lastmod>2020-07-17T22:37:41.926Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jroliveira.net/pt/garbage-collector-no-delphi-parte-ii/</loc>
+    <loc>https://jroliveira.net/pt/consumindo-datasnap-server-com-php/</loc>
     
     <lastmod>2020-07-17T22:37:41.926Z</lastmod>
     
@@ -261,14 +268,14 @@
   </url>
   
   <url>
-    <loc>https://jroliveira.net/pt/regras-de-usabilidade/</loc>
+    <loc>https://jroliveira.net/pt/rtti-run-time-type-information-no-delphi/</loc>
     
     <lastmod>2020-07-17T22:37:41.922Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jroliveira.net/pt/rtti-run-time-type-information-no-delphi/</loc>
+    <loc>https://jroliveira.net/pt/regras-de-usabilidade/</loc>
     
     <lastmod>2020-07-17T22:37:41.922Z</lastmod>
     
