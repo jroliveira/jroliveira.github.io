@@ -2,296 +2,303 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://jroliveira.net/pt/csharp-8/</loc>
+    <loc>https://jroliveira.net/pt/csharp-8-default-interface-methods/</loc>
     
-    <lastmod>2020-09-06T17:40:54.872Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jroliveira.net/pt/csharp-7/</loc>
-    
-    <lastmod>2020-07-19T15:15:39.330Z</lastmod>
+    <lastmod>2020-10-22T18:01:14.336Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jroliveira.net/pt/index.html</loc>
     
-    <lastmod>2020-07-17T22:37:41.959Z</lastmod>
+    <lastmod>2020-10-22T18:01:07.523Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jroliveira.net/tdd/index.html</loc>
     
-    <lastmod>2020-07-17T22:37:41.958Z</lastmod>
+    <lastmod>2020-10-22T18:01:07.522Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jroliveira.net/tdd-jokenpo/index.html</loc>
     
-    <lastmod>2020-07-17T22:37:41.958Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jroliveira.net/simple.data/index.html</loc>
-    
-    <lastmod>2020-07-17T22:37:41.956Z</lastmod>
+    <lastmod>2020-10-22T18:01:07.521Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jroliveira.net/strategy-pattern/index.html</loc>
     
-    <lastmod>2020-07-17T22:37:41.956Z</lastmod>
+    <lastmod>2020-10-22T18:01:07.519Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jroliveira.net/rtti-class-helper-no-delphi/index.html</loc>
+    <loc>https://jroliveira.net/simple.data/index.html</loc>
     
-    <lastmod>2020-07-17T22:37:41.955Z</lastmod>
+    <lastmod>2020-10-22T18:01:07.518Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jroliveira.net/rtti-run-time-type-information-no-delphi/index.html</loc>
     
-    <lastmod>2020-07-17T22:37:41.955Z</lastmod>
+    <lastmod>2020-10-22T18:01:07.517Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jroliveira.net/rtti-class-helper-no-delphi/index.html</loc>
+    
+    <lastmod>2020-10-22T18:01:07.516Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jroliveira.net/regras-de-usabilidade/index.html</loc>
     
-    <lastmod>2020-07-17T22:37:41.954Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jroliveira.net/princpio-de-segregao-de-interface/index.html</loc>
-    
-    <lastmod>2020-07-17T22:37:41.953Z</lastmod>
+    <lastmod>2020-10-22T18:01:07.515Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jroliveira.net/registrar-logs-no-event-viewer-com-delphi/index.html</loc>
     
-    <lastmod>2020-07-17T22:37:41.953Z</lastmod>
+    <lastmod>2020-10-22T18:01:07.514Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jroliveira.net/json-javascript-object-notation-e-generics-no-delphi/index.html</loc>
+    <loc>https://jroliveira.net/princpio-de-segregao-de-interface/index.html</loc>
     
-    <lastmod>2020-07-17T22:37:41.952Z</lastmod>
+    <lastmod>2020-10-22T18:01:07.513Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jroliveira.net/nhibernate/index.html</loc>
     
-    <lastmod>2020-07-17T22:37:41.952Z</lastmod>
+    <lastmod>2020-10-22T18:01:07.512Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jroliveira.net/json-javascript-object-notation-e-generics-no-delphi/index.html</loc>
+    
+    <lastmod>2020-10-22T18:01:07.511Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jroliveira.net/jekyll-no-windows-7/index.html</loc>
     
-    <lastmod>2020-07-17T22:37:41.951Z</lastmod>
+    <lastmod>2020-10-22T18:01:07.510Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jroliveira.net/garbage-collector-no-delphi-parte-ii/index.html</loc>
     
-    <lastmod>2020-07-17T22:37:41.950Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jroliveira.net/criando-aplicacao-web-com-nancy/index.html</loc>
-    
-    <lastmod>2020-07-17T22:37:41.949Z</lastmod>
+    <lastmod>2020-10-22T18:01:07.509Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jroliveira.net/garbage-collector-no-delphi-parte-i/index.html</loc>
     
-    <lastmod>2020-07-17T22:37:41.949Z</lastmod>
+    <lastmod>2020-10-22T18:01:07.508Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jroliveira.net/consumindo-datasnap-server-com-c-sharp/index.html</loc>
+    <loc>https://jroliveira.net/criando-aplicacao-web-com-nancy/index.html</loc>
     
-    <lastmod>2020-07-17T22:37:41.947Z</lastmod>
+    <lastmod>2020-10-22T18:01:07.507Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jroliveira.net/consumindo-datasnap-server-com-php/index.html</loc>
     
-    <lastmod>2020-07-17T22:37:41.947Z</lastmod>
+    <lastmod>2020-10-22T18:01:07.506Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jroliveira.net/consumindo-datasnap-server-com-c-sharp/index.html</loc>
+    
+    <lastmod>2020-10-22T18:01:07.505Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jroliveira.net/manifest.json</loc>
     
-    <lastmod>2020-07-17T22:37:41.946Z</lastmod>
+    <lastmod>2020-10-22T18:01:07.504Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jroliveira.net/index.html</loc>
     
-    <lastmod>2020-07-17T22:37:41.944Z</lastmod>
+    <lastmod>2020-10-22T18:01:07.503Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jroliveira.net/en/index.html</loc>
     
-    <lastmod>2020-07-17T22:37:41.939Z</lastmod>
+    <lastmod>2020-10-22T18:01:07.496Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jroliveira.net/pt/csharp-8/</loc>
+    
+    <lastmod>2020-10-22T18:01:07.494Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jroliveira.net/pt/csharp-7/</loc>
+    
+    <lastmod>2020-10-22T18:01:07.493Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jroliveira.net/pt/criando-aplicacao-web-com-nancy/</loc>
     
-    <lastmod>2020-07-17T22:37:41.935Z</lastmod>
+    <lastmod>2020-10-22T18:01:07.492Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jroliveira.net/pt/simple-data/</loc>
     
-    <lastmod>2020-07-17T22:37:41.934Z</lastmod>
+    <lastmod>2020-10-22T18:01:07.490Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jroliveira.net/pt/jekyll-no-windows-7/</loc>
     
-    <lastmod>2020-07-17T22:37:41.933Z</lastmod>
+    <lastmod>2020-10-22T18:01:07.489Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jroliveira.net/pt/nhibernate/</loc>
     
-    <lastmod>2020-07-17T22:37:41.932Z</lastmod>
+    <lastmod>2020-10-22T18:01:07.488Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jroliveira.net/pt/tdd/</loc>
     
-    <lastmod>2020-07-17T22:37:41.931Z</lastmod>
+    <lastmod>2020-10-22T18:01:07.487Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jroliveira.net/pt/strategy-pattern/</loc>
     
-    <lastmod>2020-07-17T22:37:41.930Z</lastmod>
+    <lastmod>2020-10-22T18:01:07.486Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jroliveira.net/pt/tdd-jokenpo/</loc>
     
-    <lastmod>2020-07-17T22:37:41.930Z</lastmod>
+    <lastmod>2020-10-22T18:01:07.485Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jroliveira.net/pt/princpio-de-segregao-de-interface/</loc>
     
-    <lastmod>2020-07-17T22:37:41.929Z</lastmod>
+    <lastmod>2020-10-22T18:01:07.484Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jroliveira.net/pt/registrar-logs-no-event-viewer-com-delphi/</loc>
     
-    <lastmod>2020-07-17T22:37:41.928Z</lastmod>
+    <lastmod>2020-10-22T18:01:07.483Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jroliveira.net/pt/consumindo-datasnap-server-com-c-sharp/</loc>
     
-    <lastmod>2020-07-17T22:37:41.927Z</lastmod>
+    <lastmod>2020-10-22T18:01:07.482Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jroliveira.net/pt/garbage-collector-no-delphi-parte-ii/</loc>
     
-    <lastmod>2020-07-17T22:37:41.926Z</lastmod>
+    <lastmod>2020-10-22T18:01:07.481Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jroliveira.net/pt/consumindo-datasnap-server-com-php/</loc>
     
-    <lastmod>2020-07-17T22:37:41.926Z</lastmod>
+    <lastmod>2020-10-22T18:01:07.480Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jroliveira.net/pt/garbage-collector-no-delphi-parte-i/</loc>
     
-    <lastmod>2020-07-17T22:37:41.925Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://jroliveira.net/pt/rtti-class-helper-no-delphi/</loc>
-    
-    <lastmod>2020-07-17T22:37:41.924Z</lastmod>
+    <lastmod>2020-10-22T18:01:07.479Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jroliveira.net/pt/json-javascript-object-notation-e-generics-no-delphi/</loc>
     
-    <lastmod>2020-07-17T22:37:41.924Z</lastmod>
+    <lastmod>2020-10-22T18:01:07.477Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://jroliveira.net/pt/rtti-run-time-type-information-no-delphi/</loc>
+    <loc>https://jroliveira.net/pt/rtti-class-helper-no-delphi/</loc>
     
-    <lastmod>2020-07-17T22:37:41.922Z</lastmod>
+    <lastmod>2020-10-22T18:01:07.476Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jroliveira.net/pt/regras-de-usabilidade/</loc>
     
-    <lastmod>2020-07-17T22:37:41.922Z</lastmod>
+    <lastmod>2020-10-22T18:01:07.466Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://jroliveira.net/pt/rtti-run-time-type-information-no-delphi/</loc>
+    
+    <lastmod>2020-10-22T18:01:07.465Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jroliveira.net/en/tdd-jokenpo/</loc>
     
-    <lastmod>2020-07-17T22:37:41.921Z</lastmod>
+    <lastmod>2020-10-22T18:01:07.463Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://jroliveira.net/404.html</loc>
     
-    <lastmod>2020-07-17T22:37:41.919Z</lastmod>
+    <lastmod>2020-10-22T18:01:07.460Z</lastmod>
     
   </url>
   
