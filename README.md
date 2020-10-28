@@ -43,4 +43,4 @@ $ npm run deploy
 
 The code is available under the [MIT license](LICENSE.txt).
 
-[logo]: source/favicon.png "Personal website - Logo"
+[logo]: themes/custom/source/assets/images/favicon.png "Personal website - Logo"

@@ -9,8 +9,7 @@ author: Junior Oliveira
 language:
 - en
 - pt
-timezone:
-favicon: /favicon.png?v=2
+timezone: UTC
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -30,7 +29,6 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-#new_post_name: :title.md # File name of new posts
 new_post_name: :lang/:year-:month-:day-:title.md
 default_layout: post
 titlecase: false # Transform title into titlecase
@@ -46,22 +44,12 @@ highlight:
   auto_detect: false
   tab_replace:
 
-# Category & Tag
-default_category: uncategorized
-category_map:
-tag_map:
-
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
 date_format: LL
 time_format: HH:mm:ss
-
-# Pagination
-## Set per_page to 0 to disable pagination
-per_page: 0
-pagination_dir: page
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/

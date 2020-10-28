@@ -1,6 +1,6 @@
-<h4>
-  <%= _p('articles_about', page.tag) %>
-</h4>
+<h2 class="title">
+  <%= _p('posts_about', page.tag) %>
+</h2>
 
 <% page
     .posts
@@ -8,8 +8,8 @@
       .map(item => item.date.format())
       .indexOf(post.date.format()) == pos)
     .sort('-date')
-    .each(function(post) { %>
-      
+    .forEach(post => { %>
+
   <%- partial('_partial/post/resume', {post: post}) %>
 
 <% }) %>

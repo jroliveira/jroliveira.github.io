@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Cache-Control" content="max-age=604800">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Cache-Control" content="max-age=604800" />
 
   <%
     var title = '';
@@ -24,50 +24,58 @@
     <%= title %>
   </title>
 
-  <meta name="viewport" content="width=device-width">
-  <meta name="author" content="<%= config.author %>">
-  <meta name="title" content="<%= title %>">
+  <meta name="viewport" content="width=device-width" />
+  <meta name="author" content="<%= config.author %>" />
+  <meta name="title" content="<%= title %>" />
   <meta name="description" content="<%= description %>" />
   <meta name="keywords" content="<%= tags.join(',') %>" />
-  <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="transparent">
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#C1A8B2" />
 
-  <meta property="og:type" content="<%= type %>">
+  <meta property="og:type" content="<%= type %>" />
   <meta property="og:site_name" content="<%= config.title %>" />
-  <meta property="og:url" content="<%= config.url %>">
-  <meta property="og:title" content="<%= title %>">
-  <meta property="og:description" content="<%= description %>">
+  <meta property="og:url" content="<%= config.url %>" />
+  <meta property="og:title" content="<%= title %>" />
+  <meta property="og:description" content="<%= description %>" />
 
-  <link rel="icon" href="<%= config.favicon %>" async>
-  <link rel="manifest" href="/manifest.json" async>
-  <link rel="stylesheet" href="/css/style.css" media="all" async>
+  <link rel="icon" href="/assets/images/favicon.png" async />
+  <link rel="manifest" href="/manifest.json" async />
+  <link rel="stylesheet" href="/assets/styles/main.css" async />
 
   <%- partial('_widget/google-analytics') %>
 </head>
 
 <body>
-  <div class="container">
-    <%- partial('_partial/header') %>
 
+  <header class="site-header">
+    <%- partial('_partial/site/header') %>
+  </header>
+
+  <main class="site-main">
     <%- body %>
 
-    <%- partial('_widget/disqus-comments') %>
-    <%- partial('_partial/footer') %>
+    <aside>
+      <%- partial('_widget/disqus-comments') %>
+    </aside>
+  </main>
 
-    <noscript>
-      <p>Please enable JavaScript on your browser</p>
-    </noscript>
+  <footer class="site-footer">
+    <%- partial('_partial/site/footer') %>
+  </footer>
 
-    <script async defer>
-      if ('serviceWorker' in navigator) {
-        navigator
-          .serviceWorker
-          .register('/service-worker.js')
-          .catch(console.warn);
-      }
+  <noscript>
+    <p>Please enable JavaScript on your browser</p>
+  </noscript>
 
-    </script>
-  </div>
+  <script async defer type="text/javascript">
+    if ('serviceWorker' in navigator) {
+      navigator
+        .serviceWorker
+        .register('/service-worker.js')
+        .catch(console.warn);
+    }
+  </script>
+
 </body>
 
 </html>

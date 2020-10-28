@@ -21,7 +21,8 @@
   "scripts": {
     "start": "hexo server",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "hexo clean && hexo generate && hexo deploy"
+    "deploy": "hexo clean && hexo generate && hexo deploy",
+    "generate": "hexo clean && hexo generate"
   },
   "engines": {
     "node": ">=8.9.0"
@@ -42,7 +43,9 @@
     "hexo-renderer-marked": "^3.0.0",
     "hexo-renderer-stylus": "^1.1.0",
     "hexo-server": "^1.0.0",
-    "normalize-styl": "^4.1.1"
+    "hexo-uglify": "^2.0.0",
+    "normalize-styl": "^4.1.1",
+    "nunjucks": "^3.0.1"
   },
   "devDependencies": {
     "@commitlint/cli": "9.1.1",

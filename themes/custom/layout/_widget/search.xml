@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  {% for post in posts.toArray() %}
+    <entry>
+      <title>{{ post.title }}</title>
+      <url>{{ ('/' + post.path) | uriencode }}</url>
+      <lang>{{ post.lang }}</lang>
+      <date>{{ post.date }}</date>
+      <excerpt type="html"><![CDATA[{{ post.excerpt | noControlChars | safe }}]]></excerpt>
+      <content type="html"><![CDATA[{{ post.content | noControlChars | safe }}]]></content>
+     </entry>
+  {% endfor %}
+</search>

@@ -1,6 +1,10 @@
 <small>
   <i class="fa fa-tags"></i>&nbsp;
-  <% post.tags.each(function(tag){ %>
-    <a href="/tags/<%= tag.name.replace(' ', '-') %>/"><%= tag.name %></a>&nbsp;
+  <% post
+      .tags
+      .forEach(tag => { %>
+
+        <a href="/tags/<%= tag.name.replace(' ', '-') %>/"><%= tag.name %></a>
+
   <% }) %>
 </small>

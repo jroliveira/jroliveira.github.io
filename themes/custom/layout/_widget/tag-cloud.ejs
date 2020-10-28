@@ -1,5 +1,9 @@
 <div>
-  <% site.tags.each(function(tag){ %>
-    <a href="/tags/<%= tag.name.replace(' ', '-') %>/" style="font-size:<%= (tag.length * 4) + 80 %>%"><%= tag.name %> (<%= tag.posts.filter((post, pos) => tag.posts.map(item => item.date.format()).indexOf(post.date.format()) == pos).length %>)</a>&nbsp;
+  <% site
+      .tags
+      .forEach(tag => { %>
+
+        <a href="/tags/<%= to_kebab_case(tag.name) %>/" style="font-size:<%= tag_font_size(tag) %>%"><%= tag.name %> (<%= tag_count(tag) %>)</a>
+
   <% }) %>
 </div>

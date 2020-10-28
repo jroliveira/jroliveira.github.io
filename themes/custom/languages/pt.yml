@@ -1,6 +1,9 @@
 read_more: Leia mais
 read_more_title: leia mais sobre %s
 
-articles: Artigos
-articles_about: Artigos sobre %s
+posts: Todos os posts
+posts_about: Posts sobre %s
+
+search_post: Pesquisar post
+
 tag: tag

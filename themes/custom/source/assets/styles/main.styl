@@ -1,10 +1,12 @@
-$fa-font-path ?= '/fonts'
-node-modules = '../../../../node_modules/'
+node-modules = '../../../../../node_modules/'
 
 @import node-modules + 'normalize-styl/index'
 @import node-modules + 'Skeleton-Stylus/styl/skeleton'
 @import node-modules + 'font-awesome-stylus/index'
 
-@import 'custom'
-@import '_widget/highlight'
+@import '_partial/custom'
+@import '_partial/post'
+@import '_partial/site'
+@import '_widget/text'
 @import '_widget/font-raleway'
+@import '_widget/highlight'
