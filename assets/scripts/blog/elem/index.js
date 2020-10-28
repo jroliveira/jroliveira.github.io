@@ -1,0 +1,1 @@
+blog.elem=function(){"use strict";return{getById:e=>new class{constructor(e){this.$elem=e}html(e){this.$elem.innerHTML=e}onChange(e){this.$elem.addEventListener("input",(function(t){this.value.trim().length<=0||e(this.value)}))}}(document.getElementById(e))}}();

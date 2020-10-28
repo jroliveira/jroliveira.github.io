@@ -9,14 +9,14 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>Blog pessoal com assuntos dedicados a desenvolvimento de software nas linguagens de programação C Sharp, Delphi, ASP .NET, PHP e Javascript.</description>
-    <pubDate>Thu, 22 Oct 2020 18:01:14 GMT</pubDate>
+    <pubDate>Wed, 28 Oct 2020 19:34:58 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
       <title>Novidades do C# 8.0: Default interface methods</title>
       <link>https://jroliveira.net/pt/csharp-8-default-interface-methods/</link>
       <guid>https://jroliveira.net/pt/csharp-8-default-interface-methods/</guid>
-      <pubDate>Wed, 09 Sep 2020 22:00:00 GMT</pubDate>
+      <pubDate>Wed, 09 Sep 2020 23:00:00 GMT</pubDate>
       <description>
       
         Post sobre a novidade do C# 8.0: Default interface methods
@@ -33,7 +33,7 @@
       <title>Novidades do C# 8</title>
       <link>https://jroliveira.net/pt/csharp-8/</link>
       <guid>https://jroliveira.net/pt/csharp-8/</guid>
-      <pubDate>Sun, 06 Sep 2020 17:28:00 GMT</pubDate>
+      <pubDate>Sun, 06 Sep 2020 18:28:00 GMT</pubDate>
       <description>
       
         Post sobre algumas novidades do C# 8.
@@ -50,7 +50,7 @@
       <title>Novidades do C# 7, 7.1, 7.2 e 7.3</title>
       <link>https://jroliveira.net/pt/csharp-7/</link>
       <guid>https://jroliveira.net/pt/csharp-7/</guid>
-      <pubDate>Tue, 14 Jul 2020 22:00:00 GMT</pubDate>
+      <pubDate>Tue, 14 Jul 2020 23:00:00 GMT</pubDate>
       <description>
       
         Post sobre algumas novidades do C# 7, 7.1, 7.2 e 7.3.
@@ -84,7 +84,7 @@
       <title>Simple.Data</title>
       <link>https://jroliveira.net/pt/simple-data/</link>
       <guid>https://jroliveira.net/pt/simple-data/</guid>
-      <pubDate>Mon, 28 Sep 2015 22:15:00 GMT</pubDate>
+      <pubDate>Mon, 28 Sep 2015 23:15:00 GMT</pubDate>
       <description>
       
         Post sobre Simple.Data, o que é, como funciona, quais bancos de dados ele suporta e como faz para realizar as operações nos bancos de dados.
@@ -101,7 +101,7 @@
       <title>Jekyll no Windows 7</title>
       <link>https://jroliveira.net/pt/jekyll-no-windows-7/</link>
       <guid>https://jroliveira.net/pt/jekyll-no-windows-7/</guid>
-      <pubDate>Sat, 26 Sep 2015 23:51:00 GMT</pubDate>
+      <pubDate>Sun, 27 Sep 2015 00:51:00 GMT</pubDate>
       <description>
       
         Blog pessoal com assuntos dedicados a desenvolvimento de software nas linguagens de programação C Sharp, Delphi, ASP .NET, PHP e Javascript.
@@ -118,7 +118,7 @@
       <title>NHibernate</title>
       <link>https://jroliveira.net/pt/nhibernate/</link>
       <guid>https://jroliveira.net/pt/nhibernate/</guid>
-      <pubDate>Wed, 25 Jun 2014 08:46:00 GMT</pubDate>
+      <pubDate>Wed, 25 Jun 2014 09:46:00 GMT</pubDate>
       <description>
       
         Blog pessoal com assuntos dedicados a desenvolvimento de software nas linguagens de programação C Sharp, Delphi, ASP .NET, PHP e Javascript.
@@ -169,7 +169,7 @@
       <title>TDD: Jokenpo</title>
       <link>https://jroliveira.net/en/tdd-jokenpo/</link>
       <guid>https://jroliveira.net/en/tdd-jokenpo/</guid>
-      <pubDate>Fri, 05 Oct 2012 07:47:00 GMT</pubDate>
+      <pubDate>Fri, 05 Oct 2012 08:47:00 GMT</pubDate>
       <description>
       
         Blog pessoal com assuntos dedicados a desenvolvimento de software nas linguagens de programação C Sharp, Delphi, ASP .NET, PHP e Javascript.
@@ -186,7 +186,7 @@
       <title>TDD: Jokenpo</title>
       <link>https://jroliveira.net/pt/tdd-jokenpo/</link>
       <guid>https://jroliveira.net/pt/tdd-jokenpo/</guid>
-      <pubDate>Fri, 05 Oct 2012 07:47:00 GMT</pubDate>
+      <pubDate>Fri, 05 Oct 2012 08:47:00 GMT</pubDate>
       <description>
       
         Blog pessoal com assuntos dedicados a desenvolvimento de software nas linguagens de programação C Sharp, Delphi, ASP .NET, PHP e Javascript.
@@ -203,7 +203,7 @@
       <title>Princípio de Segregação de Interface</title>
       <link>https://jroliveira.net/pt/princpio-de-segregao-de-interface/</link>
       <guid>https://jroliveira.net/pt/princpio-de-segregao-de-interface/</guid>
-      <pubDate>Sun, 02 Sep 2012 10:45:00 GMT</pubDate>
+      <pubDate>Sun, 02 Sep 2012 11:45:00 GMT</pubDate>
       <description>
       
         Blog pessoal com assuntos dedicados a desenvolvimento de software nas linguagens de programação C Sharp, Delphi, ASP .NET, PHP e Javascript.
@@ -220,7 +220,7 @@
       <title>Registrar Logs no Event Viewer com Delphi</title>
       <link>https://jroliveira.net/pt/registrar-logs-no-event-viewer-com-delphi/</link>
       <guid>https://jroliveira.net/pt/registrar-logs-no-event-viewer-com-delphi/</guid>
-      <pubDate>Thu, 19 May 2011 05:16:00 GMT</pubDate>
+      <pubDate>Thu, 19 May 2011 06:16:00 GMT</pubDate>
       <description>
       
         Blog pessoal com assuntos dedicados a desenvolvimento de software nas linguagens de programação C Sharp, Delphi, ASP .NET, PHP e Javascript.
@@ -237,7 +237,7 @@
       <title>Consumindo DataSnap Server com C#</title>
       <link>https://jroliveira.net/pt/consumindo-datasnap-server-com-c-sharp/</link>
       <guid>https://jroliveira.net/pt/consumindo-datasnap-server-com-c-sharp/</guid>
-      <pubDate>Fri, 01 Apr 2011 05:22:00 GMT</pubDate>
+      <pubDate>Fri, 01 Apr 2011 06:22:00 GMT</pubDate>
       <description>
       
         Blog pessoal com assuntos dedicados a desenvolvimento de software nas linguagens de programação C Sharp, Delphi, ASP .NET, PHP e Javascript.
@@ -339,7 +339,7 @@
       <title>Regras de usabilidade</title>
       <link>https://jroliveira.net/pt/regras-de-usabilidade/</link>
       <guid>https://jroliveira.net/pt/regras-de-usabilidade/</guid>
-      <pubDate>Fri, 06 Aug 2010 07:35:00 GMT</pubDate>
+      <pubDate>Fri, 06 Aug 2010 08:35:00 GMT</pubDate>
       <description>
       
         Blog pessoal com assuntos dedicados a desenvolvimento de software nas linguagens de programação C Sharp, Delphi, ASP .NET, PHP e Javascript.
