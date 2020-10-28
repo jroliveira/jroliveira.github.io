@@ -1,22 +1,23 @@
-/* eslint-disable */
-
-var CACHE_NAME = 'static-v2';
+const version = '2.1';
 
 self
   .addEventListener('install', event => event
     .waitUntil(caches
-      .open(CACHE_NAME)
+      .open(`static-v${version}`)
       .then(cache => cache.addAll([
-        '/',
-        'favicon.png',
         'manifest.json',
-        'css/style.css',
-        'fonts/fontawesome-webfont.woff2?v=4.7.0',
-        'fonts/raleway-light2.woff2',
-        'fonts/raleway-regular2.woff2',
-        'fonts/raleway-semibold2.woff2',
-        'en/',
-        'pt/',
+        'assets/images/favicon.png',
+        'assets/images/favicon@128.png',
+        'assets/images/favicon@256.png',
+        'assets/images/favicon@512.png',
+        'assets/images/favicon.svg',
+        'assets/images/twitter.svg',
+        'assets/images/linkedin.svg',
+        'assets/images/github.svg',
+        'assets/fonts/fontawesome-webfont.woff2?v=4.7.0',
+        'assets/fonts/raleway-light2.woff2',
+        'assets/fonts/raleway-regular2.woff2',
+        'assets/fonts/raleway-semibold2.woff2',
       ]))));
 
 self
@@ -24,7 +25,7 @@ self
     .waitUntil(caches
       .keys()
       .then(keys => Promise.all(keys
-        .filter(key => key.indexOf(CACHE_NAME) !== 0)
+        .filter(key => key.indexOf(`static-v${version}`) !== 0)
         .map(key => caches.delete(key))))));
 
 self

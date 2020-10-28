@@ -1,6 +1,11 @@
 <small>
   <i class="fa fa-globe"></i>&nbsp;
-  <% site.posts.filter(item => item.date.format() == post.date.format()).forEach(function(item) { %>
-    <a href="/<%= item.path %>/" style="text-transform: uppercase;"><%= item.lang %></a>&nbsp;
+  <% site
+      .posts
+      .filter(item => item.date.format() == post.date.format())
+      .forEach(item => { %>
+
+    <a class="text--uppercase" href="/<%= item.path %>"><%= item.lang %></a>
+
   <% }) %>
 </small>

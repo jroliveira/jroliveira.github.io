@@ -1,0 +1,155 @@
+.search-form
+  border 1px solid #fff
+  display flex
+  flex-direction row
+  margin 4rem auto
+  width 100%
+
+  &:hover
+    color #F1F1F1
+    text-decoration none !important
+    border 1px solid #c1c1c1
+    border-radius 4px
+
+  &:hover > &__icon
+    display initial
+
+  &:hover > &__input
+    transform: translate(-24.5px, 0)
+
+  &__button
+    background-color #000
+    border solid 1px #000
+    border-radius 5px
+    color #F1F1F1
+    cursor pointer
+    font-size 14px
+    font-weight 100
+    padding 4px
+
+    &:hover
+      color #F1F1F1
+      text-decoration none !important
+
+  &__icon
+    color #d9d9d9
+    display none
+    font-size 27px
+    margin-right 8px
+    padding 8px
+    z-index 1
+
+  &__input
+    border none !important
+    text-align center
+    flex-grow 2
+
+    padding 0 0 0 0 !important
+    font-size 3.6rem
+    font-weight 100
+    height auto !important
+    letter-spacing -0.1rem
+    line-height 1.25
+    margin 0
+    width 100%
+    z-index 0
+
+    &:focus
+      border-color #c1c1c1 !important
+
+.site
+  &-branding
+    display inline-table
+
+    &__logo
+      background-color #c1a8b2
+      border-radius 21px
+      display table-cell
+      height 24px
+      width 24px
+
+    &__title
+      display table-cell
+      font-size 1.5rem
+      letter-spacing .03rem
+      padding-left 8px
+      vertical-align middle
+
+  &-footer
+    background-color #f1f1f1
+    bottom 0
+    border-top 1px solid #ccc
+    padding 28px
+    position absolute
+
+    &__container
+      margin 0 auto
+      max-width 800px
+
+    &__social-list
+      display none
+
+  &-header
+    background-color #f1f1f1
+    border-bottom 1px solid #ccc
+    height 24px
+    padding 8px
+
+    &__container
+      margin 0 auto
+      max-width 800px
+
+    &__social-list
+      display flex
+      float right
+      list-style none
+      margin 0px
+
+      &-item
+        float right
+        margin 0 0 0 8px
+
+    & .site-branding
+      color #222
+
+  &-main
+    margin 0 auto
+    max-width 800px
+    padding 0 20px 181px 20px
+
+.title
+  & .post__meta
+    font-size 0.45em
+
+@media (min-width: 550px)
+  .search-form
+    &:hover > &__input
+      transform: translate(-27.5px, 0)
+
+    &__button
+      font-size 18px
+
+    &__icon
+      font-size 33px
+
+    &__input
+      font-size 4.2rem
+
+  .site
+    &-branding
+      &__logo
+        height 28px
+        width 28px
+
+      &__title
+        font-size 1.8rem
+
+    &-footer
+      width 100%
+      padding 28px 0
+
+      &__social-list
+        display initial
+
+    &-header
+      height 28px

@@ -1,17 +1,19 @@
-<div class="docs-section">
-  <h6 class="docs-header">
-    <%- partial('title') %>
+<article class="post-item">
 
-    <br />
-    
-    <%- partial('date') %>
-    <small>&nbsp; | &nbsp;</small>
-    <%- partial('lang') %>
-  </h6>
+  <h5>
+    <a class="post-item__title" href="<%= url_for(post.path) %>" title="<%= post.title %>"><%= post.title %></a>
 
-  <p>
+    <p class="post__meta">
+      <%- partial('date') %>
+      <%- partial('../utilities/pipe') %>
+      <%- partial('lang') %>
+    </p>
+  </h5>
+
+  <div class="post-item__excerpt">
     <%- post.excerpt %>
-  </p>
+  </div>
 
-  <%- partial('read-more') %>
-</div>
+  <a class="button" href="<%= url_for(post.path) %>" title="_p('read_more_title', post.title)"><%= __('read_more') %> »</a>
+
+</article>

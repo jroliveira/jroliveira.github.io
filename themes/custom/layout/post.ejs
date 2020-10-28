@@ -1,19 +1,21 @@
-<h4>
-  <%- page.title %>
+<article>
 
-  <br />
+  <h2 class="title">
+    <%= page.title %>
 
-  <%- partial('_partial/post/date', {post: page}) %>
-  <small>&nbsp; | &nbsp;</small>
-  <%- partial('_partial/post/comments', {post: page}) %>
-  <small>&nbsp; | &nbsp;</small>
-  <%- partial('_partial/post/tag', {post: page}) %>
-  <small>&nbsp; | &nbsp;</small>
-  <%- partial('_partial/post/lang', {post: page}) %>
-</h4>
+    <p class="post__meta">
+      <%- partial('_partial/post/date', {post: page}) %>
+      <%- partial('_partial/utilities/pipe') %>
+      <%- partial('_partial/post/comments', {post: page}) %>
+      <%- partial('_partial/utilities/pipe') %>
+      <%- partial('_partial/post/tag', {post: page}) %>
+      <%- partial('_partial/utilities/pipe') %>
+      <%- partial('_partial/post/lang', {post: page}) %>
+    </p>
+  </h2>
 
-<div class="docs-section post">
-  <p>
+  <div>
     <%- page.content %>
-  </p>
-</div>
+  </div>
+
+</article>
