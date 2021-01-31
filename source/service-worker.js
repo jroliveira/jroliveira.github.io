@@ -14,6 +14,8 @@ self
         'assets/images/twitter.svg',
         'assets/images/linkedin.svg',
         'assets/images/github.svg',
+        'assets/images/instagram.svg',
+        'assets/images/500px.svg',
         'assets/fonts/fontawesome-webfont.woff2?v=4.7.0',
         'assets/fonts/raleway-light2.woff2',
         'assets/fonts/raleway-regular2.woff2',

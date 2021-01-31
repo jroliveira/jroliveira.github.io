@@ -68,12 +68,18 @@
       height 24px
       width 24px
 
-    &__title
-      display table-cell
+    &__title--full,
+    &__title--short
       font-size 1.5rem
       letter-spacing .03rem
       padding-left 8px
       vertical-align middle
+
+    &__title--full
+      display none
+
+    &__title--short
+      display table-cell
 
   &-footer
     background-color #f1f1f1
@@ -141,8 +147,15 @@
         height 28px
         width 28px
 
-      &__title
+      &__title--full,
+      &__title--short
         font-size 1.8rem
+
+      &__title--full
+        display table-cell
+
+      &__title--short
+        display none
 
     &-footer
       width 100%
