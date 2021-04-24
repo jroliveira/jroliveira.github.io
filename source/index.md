@@ -1,6 +1,6 @@
 ---
-layout: index
-description: Blog pessoal com assuntos dedicados a desenvolvimento de software nas linguagens de programação C Sharp, Delphi, ASP .NET, PHP e Javascript.
+layout: post/all
+title: "All posts"
 comments: false
 lang: default
 ---

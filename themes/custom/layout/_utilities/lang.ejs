@@ -1,0 +1,8 @@
+<small>
+  <i class="fas fa-globe"></i>&nbsp;
+  <% site.posts.filterByDate(entry.date).forEach(post => { %>
+
+    <a class="text--uppercase" href="/<%= post.path %>"><%= post.lang %></a>
+
+  <% }) %>
+</small>

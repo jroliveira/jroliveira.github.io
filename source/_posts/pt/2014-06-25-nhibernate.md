@@ -1,12 +1,10 @@
 ---
-layout: post
-title: NHibernate
-description: Blog pessoal com assuntos dedicados a desenvolvimento de software nas linguagens de programação C Sharp, Delphi, ASP .NET, PHP e Javascript.
-date: 2014-06-25 09:46
+layout: post/index
+title: "NHibernate"
+date: 2014-06-25
 comments: true
 categories:
-- desenvolvimento
-- csharp
+- dev
 tags:
 - csharp
 - nhibernate
@@ -17,11 +15,11 @@ lang: pt
 Ol&#225; pessoal, depois de um tempo parado, vamos falar um pouco de **NHibernate**.
 Este post estava pronto a bastante tempo pode ser que alguma coisa n&#227;o seja mais aplicado nas novas vers&#227;o do NHibernate.
 
+<!--more-->
+
 **Instalando**
 
 A forma mais simples de instalar o NHibernate &#233; usando o <a href="http://nuget.org/" target="_blank" rel="external noopener">NuGet</a>, abaixo o comando para instalar o NHibernate. No exemplo estou usando a vers&#227;o **3.3.3.4000** para o **.NET Framework 4.0**.
-
-<!--more-->
 
 ```
 install-package NHibernate

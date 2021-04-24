@@ -1,0 +1,8 @@
+<small>
+  <i class="fas fa-tags"></i>&nbsp;
+  <% entry.tags.forEach(tag => { %>
+
+    <a href="/tags/<%= tag.name.replace(' ', '-') %>/"><%= tag.name %></a>
+
+  <% }) %>
+</small>

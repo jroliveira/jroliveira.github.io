@@ -1,12 +1,10 @@
 ---
-layout: post
-title: RTTI e Class Helper no Delphi
-description: Blog pessoal com assuntos dedicados a desenvolvimento de software nas linguagens de programação C Sharp, Delphi, ASP .NET, PHP e Javascript.
-date: 2010-11-07 13:59
+layout: post/index
+title: "RTTI e Class Helper no Delphi"
+date: 2010-11-07
 comments: true
 categories: 
-- desenvolvimento
-- delphi
+- dev
 tags: 
 - delphi
 - rtti
@@ -15,11 +13,11 @@ lang: pt
 
 Ol&#225; pessoal, mais um post sobre RTTI (Run-Time Type Information) no Delphi por&#233;m agora eu explorei um pouco mais das novidades do Delphi XE como as novas classes para trabalhar com RTTI e o que pode ser feito usando **Class Helper** que j&#225; vem desde as vers&#245;es anteriores.
 
+<!--more-->
+
 Sobre RTTI n&#227;o vou me fala muito pois j&#225; fiz um post sobre este assunto e **Class Helper** &#233; um tipo que serve para extender uma classes adionando-a m&#233;todos e propriedades.
 
 Para este exemplo vou usar o mesmo contexto do post anterior sobre RTTI para facilitar o entendimento e fazer uma compara&#231;&#227;o j&#225; que no post anterior trabalhei com a vers&#227;o do Delphi 7 e neste post vou trabalhar com a vers&#227;o do Delphi XE.
-
-<!--more-->
 
 O primeiro c&#243;digo &#233; de uma classe gen&#234;rica de modelo da estrutura da tabela no banco de dados. A primeira difer&#234;n&#231;a &#233; que a mesma n&#227;o precisa mais herdar da classe TPersistent que cont&#233;m as directivas de compila&#231;&#227;o **{$M+}** (**{$METHODINFO ON}**) e **{$M-}** (**{$METHODINFO OFF}**) necess&#225;rias para implementar o acesso dos dados em mem&#243;ria e retirei tamb&#233;m os m&#233;todos **Create()** e **Destroy()** pois n&#227;o eram necess&#225;rios.
 

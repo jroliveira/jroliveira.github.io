@@ -1,12 +1,10 @@
 ---
-layout: post
-title: RTTI (Run-Time Type Information) no Delphi
-description: Blog pessoal com assuntos dedicados a desenvolvimento de software nas linguagens de programação C Sharp, Delphi, ASP .NET, PHP e Javascript.
-date: 2010-07-31 16:01
+layout: post/index
+title: "RTTI (Run-Time Type Information) no Delphi"
+date: 2010-07-31
 comments: true
 categories: 
-- desenvolvimento
-- delphi
+- dev
 tags: 
 - delphi
 - rtti
@@ -15,9 +13,9 @@ lang: pt
 
 RTTI (Run-Time Type Information) &#233; uma t&#233;cnica utilizada para identificar tipo de objetos armazenados em mem&#243;ria em tempo de execu&#231;&#227;o.
 
-Abaixo um exemplo de como utilizar RTTI em sua aplica&#231;&#227;o, este exemplo &#233; apenas uma id&#233;ia de como usar RTTI para criar classes e m&#233;todos gen&#234;ricos de acesso a base de dados.
-
 <!--more-->
+
+Abaixo um exemplo de como utilizar RTTI em sua aplica&#231;&#227;o, este exemplo &#233; apenas uma id&#233;ia de como usar RTTI para criar classes e m&#233;todos gen&#234;ricos de acesso a base de dados.
 
 O primeiro c&#243;digo &#233; de uma classe gen&#234;rica de modelo da estrutura da tabela no banco de dados. Note que a mesma herda da classe TPersistent pois nela existe as directivas de compila&#231;&#227;o **{$M+}** (**{$METHODINFO ON}**) e **{$M-}** (**{$METHODINFO OFF}**) necess&#225;rias para implementar o acesso dos dados em mem&#243;ria.
 

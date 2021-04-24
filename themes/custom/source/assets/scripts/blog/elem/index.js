@@ -11,19 +11,22 @@ blog.elem = function () {
     }
 
     onChange(callback) {
-      this.$elem.addEventListener('input', function (e) {
-        if (this.value.trim().length <= 0) {
-          return;
-        }
-
+      this.$elem.addEventListener('input', function () {
         callback(this.value);
       });
     }
   }
 
   return {
-    getById: elemId => new Elem(document
-      .getElementById(elemId)),
+    getByClass: className => {
+      const $elems = document.getElementsByClassName(className);
+
+      if ($elems && $elems.length === 1) {
+        return new Elem($elems[0]);
+      }
+
+      return undefined;
+    },
   };
 
 }();

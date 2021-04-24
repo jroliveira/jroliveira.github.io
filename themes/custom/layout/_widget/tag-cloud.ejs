@@ -1,9 +1,22 @@
-<div>
-  <% site
-      .tags
-      .forEach(tag => { %>
+<div class="tag-cloud">
+  <% site.tags.forEach(tag => {
+    var href;
 
-        <a href="/tags/<%= to_kebab_case(tag.name) %>/" style="font-size:<%= tag_font_size(tag) %>%"><%= tag.name %> (<%= tag_count(tag) %>)</a>
+    switch (tag.name) {
+      case 'poem':
+        href = 'poems';
+        break;
+
+      case 'drawing':
+        href = 'drawings';
+        break;
+
+      default:
+        href = `tags/${to_kebab_case(tag.name)}`;
+    }
+  %>
+
+    <a href="/<%= href %>/" title="<%= tag_count(tag) %>" style="font-size:<%= tag_font_size(tag) %>%"><%= to_kebab_case(tag.name) %></a>
 
   <% }) %>
 </div>

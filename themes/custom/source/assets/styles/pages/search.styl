@@ -1,0 +1,37 @@
+.search-form
+  border 1px solid #fff
+  border-radius 4px
+  margin 4rem auto
+
+.search-form__input
+  border none !important
+  font-size 3.5rem
+  font-weight 100
+  height auto !important
+  letter-spacing -0.1rem
+  line-height 1.25
+  margin 0
+  padding 0 !important
+  text-align center
+  transform scale(0.98)
+  width 100%
+
+  &:focus
+  &:hover
+    box-shadow 0 0 5px #bbb
+    transform scale(1)
+
+.no-results
+  display none
+  text-align center
+  font-size 1.8rem
+
+.posts-found:empty ~ .no-results
+  display initial
+
+@media (min-width: 550px)
+  .search-form
+    margin 6rem auto
+
+  .search-form__input
+    font-size 4rem

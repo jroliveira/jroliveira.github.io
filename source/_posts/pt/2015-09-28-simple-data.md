@@ -1,12 +1,11 @@
 ---
-layout: post
-title: Simple.Data
-description: Post sobre Simple.Data, o que é, como funciona, quais bancos de dados ele suporta e como faz para realizar as operações nos bancos de dados.
-date: 2015-09-28 23:15
+layout: post/index
+title: "Simple.Data"
+description: "Post sobre Simple.Data, o que é, como funciona, quais bancos de dados ele suporta e como faz para realizar as operações nos bancos de dados."
+date: 2015-09-28
 comments: true
 categories:
-- desenvolvimento
-- csharp
+- dev
 tags:
 - csharp
 - simpledata
@@ -15,12 +14,12 @@ lang: pt
 
 Olá pessoal, hoje eu vou falar um pouco sobre <a href="https://github.com/markrendle/Simple.Data" target="_blank" rel="external noopener">Simple.Data</a>.
 
+<!--more-->
+
 **O que é?**
 
 Simple.Data é um micro framework de acesso a banco de dados baseado no **ActiveRecord** e **DataMapper** do **Ruby**.  
 Ele usa **dynamic** do **.NET 4** para interpretar nomes de método e propriedade em tempo de execução e mapeá-los usando uma abordagem baseada em convenções.
-
-<!--more-->
 
 **Como instalar?**
 

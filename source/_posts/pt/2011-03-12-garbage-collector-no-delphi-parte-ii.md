@@ -1,12 +1,10 @@
 ---
-layout: post
-title: Garbage Collector no Delphi - Parte II
-description: Blog pessoal com assuntos dedicados a desenvolvimento de software nas linguagens de programação C Sharp, Delphi, ASP .NET, PHP e Javascript.
-date: 2011-03-12 11:50
+layout: post/index
+title: "Garbage Collector no Delphi - Parte II"
+date: 2011-03-12
 comments: true
 categories: 
-- desenvolvimento
-- delphi
+- dev
 tags: 
 - delphi
 - generics
@@ -15,11 +13,11 @@ lang: pt
 
 Ol&#225; pessoal, continuando o post anterior de **Garbage Collector**, agora vou explorar o uso para objetos que herdam a classe **TObject**.
 
+<!--more-->
+
 Em uma thread na lista de discu&#231;&#227;o **<a href="http://br.groups.yahoo.com/group/lista-delphi/" target="_blank" rel="external noopener">lista-delphi</a>** o membro **Caique** vez uma coloca&#231;&#227;o perfeita do **Garbage Collector** no **Delphi** e como tinha prometido na thread vou compartilhar com voc&#234;s a explica&#231;&#227;o dele. Segue o link da **<a href="http://br.groups.yahoo.com/group/lista-delphi/message/143527" target="_blank" rel="external noopener">thread</a>**.
 
 > O **Delphi** "n&#227;o" tem **Garbage Collector**. Entende-se por **Garbage Collector** uma forma de destruir qualquer objeto fora de contexto como ocorre em plataformas gerenciadas. O que esta demonstrando no seu exemplo &#233; o uso de interfaces e estas sim por defini&#231;&#227;o destroem o objeto a qual est&#227;o associadas quando saem do contexto.
-
-<!--more-->
 
 Primeiro desenvolvi uma classe que ser&#225; respons&#225;vel por coletar os objetos que n&#227;o est&#227;o mais sendo utilizados.
 

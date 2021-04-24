@@ -1,9 +1,15 @@
-read_more: Leia mais
-read_more_title: leia mais sobre %s
+page:
+  index: Índice
+  no_results: Desculpe, não foram encontrados resultados
+  not_found:
+    title: Oops! Página não encontrada
+    notes: Desculpe, a página que você está procurando não existe, foi removida, nome mudou ou está temporariamente indisponível.
+  return_to_home: Retornar a página inicial
 
-posts: Todos os posts
-posts_about: Posts sobre %s
+post:
+  about: Posts sobre %s
+  all: Todos os posts
+  search: Pesquisar posts
 
-search_post: Pesquisar post
-
-tag: tag
+tag:
+  all: Todas as tags

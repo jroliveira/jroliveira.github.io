@@ -1,12 +1,10 @@
 ---
-layout: post
-title: Princípio de Segregação de Interface
-description: Blog pessoal com assuntos dedicados a desenvolvimento de software nas linguagens de programação C Sharp, Delphi, ASP .NET, PHP e Javascript.
-date: 2012-09-02 11:45
+layout: post/index
+title: "Princípio de Segregação de Interface"
+date: 2012-09-02
 comments: true
 categories: 
-- desenvolvimento
-- csharp
+- dev
 tags: 
 - csharp
 - solid
@@ -23,11 +21,11 @@ Ol&#225; pessoal, vou fazer alguns posts sobre **S.O.L.I.D.** O primeiro que gos
   <span class="text-muted">D</span>
 </pre>
 
+<!--more-->
+
 A defini&#231;&#227;o basicamente &#233;:
 
 > "Clients should not be forced to depend upon interfaces that they do not use."
-
-<!--more-->
 
 Para mais detalhes sobre a defini&#231;&#227;o, segue o link do artigo <a href="http://www.objectmentor.com/resources/articles/isp.pdf" title="The Interface Segregation Principle" target="_blank" rel="external noopener">The Interface Segregation Principle</a> que &#233; um resumo de um capitulo do livro *"Agile Principles, Patterns, and Practices in C#"* de Martin C. Robert e Martin Micah.
 

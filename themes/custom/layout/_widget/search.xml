@@ -6,6 +6,18 @@
       <url>{{ ('/' + post.path) | uriencode }}</url>
       <lang>{{ post.lang }}</lang>
       <date>{{ post.date }}</date>
+      <categories>
+        {% for category in post.categories.toArray() %}
+          <category>{{ category.name }}</category>
+        {% endfor %}
+      </categories>
+      {% if post.tags and post.tags.length > 0 %}
+      <tags>
+        {% for tag in post.tags.toArray() %}
+          <tag>{{ tag.name }}</tag>
+        {% endfor %}
+      </tags>
+      {% endif %}
       <excerpt type="html"><![CDATA[{{ post.excerpt | noControlChars | safe }}]]></excerpt>
       <content type="html"><![CDATA[{{ post.content | noControlChars | safe }}]]></content>
      </entry>

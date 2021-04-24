@@ -1,12 +1,11 @@
 ---
-layout: post
+layout: post/index
 title: "Novidades do C# 8.0: Default interface methods"
 description: "Post sobre a novidade do C# 8.0: Default interface methods"
-date: 2020-09-09 23:00
+date: 2020-09-09
 comments: true
 categories:
-- desenvolvimento
-- csharp
+- dev
 tags:
 - csharp
 lang: pt
@@ -15,16 +14,16 @@ lang: pt
 Olá, neste artigo eu vou escrever sobre a novidade do [C# 8 default interface methods](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-8#default-interface-methods).
 [Neste artigo](/pt/csharp-8) você poderá ver um resumo das novidades que eu acho mais relevantes que vieram no C# 8.
 
-##### Conteúdo:
+<!--more-->
+
+##### Index:
 
  - [Antes do C# 8](/pt/csharp-8-default-interface-methods/#Antes-do-C-8-uarr);
  - [Antes do C# 8 (uma opção com interface extensions)](/pt/csharp-8-default-interface-methods/#Antes-do-C-8-uma-opcao-com-interface-extensions-uarr);
  - [Depois do C# 8](/pt/csharp-8-default-interface-methods/#Depois-do-C-8-uarr);
  - [Considerações finais](/pt/csharp-8-default-interface-methods/#Consideracoes-finais-uarr)
 
-<!--more-->
-
-##### Antes do C# 8 [&uarr;](#Conteudo)
+##### Antes do C# 8 [&uarr;](#Index)
 
 {% codeblock lang:csharp line_number:true highlight:true %}
 public interface ILimit
@@ -89,7 +88,7 @@ public sealed class FilterBuilder : IFilterBuilder
 }
 {% endcodeblock %}
 
-##### Antes do C# 8 (uma opção com interface extensions)  [&uarr;](#Conteudo)
+##### Antes do C# 8 (uma opção com interface extensions)  [&uarr;](#Index)
 
 Este exemplo foi inspirado no artigo [Pseudo Traits in C#](https://dev.to/htissink/pseudo-traits-in-c-lnp), que traz uma abordagem de como podemos fazer praticamente a mesma coisa sem precisar desta nova funcionalidade.
 
@@ -172,7 +171,7 @@ public sealed class FilterBuilder : IFilterBuilder
 }
 {% endcodeblock %}
 
-##### Depois do C# 8 [&uarr;](#Conteudo)
+##### Depois do C# 8 [&uarr;](#Index)
 
 {% codeblock lang:csharp line_number:true highlight:true %}
 public interface IFilterBase
@@ -241,7 +240,7 @@ public sealed class FilterBuilder : IFilterBuilder
 }
 {% endcodeblock %}
 
-##### Considerações finais [&uarr;](#Conteudo)
+##### Considerações finais [&uarr;](#Index)
 
 Esta nova funcionalidade dividiu um pouco a opinião da comunidade, alguns gostaram e outros nem tanto, abaixo dois artigos que ilustram bem essas opiniões:
 

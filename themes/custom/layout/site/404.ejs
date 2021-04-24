@@ -1,0 +1,61 @@
+---
+layout:
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Cache-Control" content="max-age=604800" />
+
+  <%
+    var title = `${__('page.not_found.title')} ~ ${config.title}`;
+    var type = 'article';
+    var description = page.description || config.description;
+    var tags = page.tags ? page.tags.map(tag => tag.name) : ['delphi', 'php', 'csharp'];
+  %>
+
+  <title>
+    <%= title %>
+  </title>
+
+  <meta name="viewport" content="width=device-width" />
+  <meta name="author" content="<%= config.author %>" />
+  <meta name="title" content="<%= title %>" />
+  <meta name="description" content="<%= description %>" />
+  <meta name="keywords" content="<%= tags.join(',') %>" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#C1A8B2" />
+
+  <meta property="og:type" content="<%= type %>" />
+  <meta property="og:site_name" content="<%= config.title %>" />
+  <meta property="og:url" content="<%= config.url %>" />
+  <meta property="og:title" content="<%= title %>" />
+  <meta property="og:description" content="<%= description %>" />
+
+  <link rel="icon" href="/assets/images/favicon.png" async />
+  <link rel="manifest" href="/manifest.json" async />
+  <link rel="stylesheet" href="/assets/styles/main.css" async />
+</head>
+
+<body>
+  <main class="not-found">
+    <div class="not-found__content">
+      <h2 class="not-found__title">
+        404
+      </h2>
+
+      <h4 class="not-found__subtitle">
+        <%= __('page.not_found.title') %>
+      </h4>
+
+      <p class="not-found__notes">
+        <%= __('page.not_found.notes') %>
+        <a href="/"><%= __('page.return_to_home') %></a>
+      </p>
+    </div>
+  </main>
+</body>
+
+</html>

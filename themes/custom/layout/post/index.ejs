@@ -1,0 +1,19 @@
+<article>
+  <h2 class="page__title">
+    <%= page.title %>
+
+    <p class="post__meta">
+      <%- partial('_utilities/date', {entry: page}) %>
+      <%- partial('_utilities/pipe') %>
+      <%- partial('_utilities/comments', {entry: page}) %>
+      <%- partial('_utilities/pipe') %>
+      <%- partial('_utilities/tag', {entry: page}) %>
+      <%- partial('_utilities/pipe') %>
+      <%- partial('_utilities/lang', {entry: page}) %>
+    </p>
+  </h2>
+
+  <div class="page__content">
+    <%- page.content %>
+  </div>
+</article>

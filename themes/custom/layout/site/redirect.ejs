@@ -1,0 +1,32 @@
+---
+layout:
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>
+    Redirecting…
+  </title>
+
+  <%
+    var redirectTo = `${config.url}/${page.redirect_to}/`;
+  %>
+
+  <link rel="canonical" href="<%= redirectTo %>">
+  <meta http-equiv="refresh" content="0; url=<%= redirectTo %>">
+</head>
+
+<body cz-shortcut-listen="true">
+  <h1>Redirecting…</h1>
+
+  <a href="<%= redirectTo %>">Click here if you are not redirected.</a>
+
+  <script>
+    location = "<%= redirectTo %>"
+  </script>
+</body>
+
+</html>

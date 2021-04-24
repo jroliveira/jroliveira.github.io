@@ -1,4 +1,4 @@
-const version = '2.1';
+const version = '2.2';
 
 self
   .addEventListener('install', event => event
@@ -7,16 +7,17 @@ self
       .then(cache => cache.addAll([
         'manifest.json',
         'assets/images/favicon.png',
+        'assets/images/favicon.svg',
         'assets/images/favicon@128.png',
         'assets/images/favicon@256.png',
         'assets/images/favicon@512.png',
-        'assets/images/favicon.svg',
-        'assets/images/twitter.svg',
-        'assets/images/linkedin.svg',
-        'assets/images/github.svg',
-        'assets/images/instagram.svg',
-        'assets/images/500px.svg',
-        'assets/fonts/fontawesome-webfont.woff2?v=4.7.0',
+
+        'assets/images/social-networks/500px.svg',
+        'assets/images/social-networks/github.svg',
+        'assets/images/social-networks/instagram.svg',
+        'assets/images/social-networks/linkedin.svg',
+        'assets/images/social-networks/twitter.svg',
+
         'assets/fonts/raleway-light2.woff2',
         'assets/fonts/raleway-regular2.woff2',
         'assets/fonts/raleway-semibold2.woff2',

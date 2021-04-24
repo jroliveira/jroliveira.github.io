@@ -1,0 +1,41 @@
+<h2 class="page__title">
+  <%= __('tag.all') %>
+</h2>
+
+<div class="page__content">
+  <section class="all-tags__index">
+    <h5 id="Index">
+      <%= __('page.index') %>
+    </h5>
+
+    <% site.tags.available().toPage(6).forEach(page => { %>
+
+      <div class="row">
+        <% page.forEach(tag => { %>
+
+          <div class="all-tags__item two columns">
+            <a href="/tags/#<%= to_kebab_case(tag.name) %>"><%= tag.name %></a>
+          </div>
+
+        <% }) %>
+      </div>
+
+    <% }) %>
+  </section>
+
+  <% site.tags.available().forEach(tag => { %>
+
+    <section class="tag-posts">
+      <h4 id="<%= to_kebab_case(tag.name) %>">
+        <%= _p('post.about', tag.name) %> <a href="#Index">↑</a>
+      </h4>
+
+      <% site.posts.filterByTag(tag).forEach(post => { %>
+
+        <%- partial('post/_partial/resume', {post: post})  %>
+
+      <% }) %>
+    </section>
+
+  <% }) %>
+</div>

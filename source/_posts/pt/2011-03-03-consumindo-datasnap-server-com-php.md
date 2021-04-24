@@ -1,19 +1,16 @@
 ---
-layout: post
-title: Consumindo DataSnap Server com PHP
-description: Blog pessoal com assuntos dedicados a desenvolvimento de software nas linguagens de programação C Sharp, Delphi, ASP .NET, PHP e Javascript.
-date: 2011-03-03 19:34
+layout: post/index
+title: "Consumindo DataSnap Server com PHP"
+date: 2011-03-03
 comments: true
 categories: 
-- desenvolvimento
-- delphi
-- php
+- dev
 tags: 
-- php
 - delphi
 - datasnap
-- json
 - jquery
+- json
+- php
 lang: pt
 ---
 
