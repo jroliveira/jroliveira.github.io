@@ -1,0 +1,22 @@
+<section class="search-form">
+  <input class="search-form__input" type="text" placeholder="<%= __('post.search') %>" />
+</section>
+
+<section class="search-results page__content">
+  <div class="posts-found"></div>
+
+  <div class="no-results">
+    <p>
+      <%= __('page.no_results') %>
+    </p>
+  </div>
+</section>
+
+<script src="/assets/scripts/vendors/jquery-3.5.1.min.js"></script>
+<script src="/assets/scripts/blog/namespace.js"></script>
+<script src="/assets/scripts/blog/elem/index.js"></script>
+<script src="/assets/scripts/blog/post/index.js"></script>
+<script src="/assets/scripts/blog/search/index.js"></script>
+<script type="text/javascript">
+  blog.search.setup();
+</script>

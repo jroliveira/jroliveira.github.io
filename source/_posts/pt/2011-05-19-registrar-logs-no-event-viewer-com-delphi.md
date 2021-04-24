@@ -1,12 +1,10 @@
 ---
-layout: post
-title: Registrar Logs no Event Viewer com Delphi
-description: Blog pessoal com assuntos dedicados a desenvolvimento de software nas linguagens de programação C Sharp, Delphi, ASP .NET, PHP e Javascript.
-date: 2011-05-19 06:16
+layout: post/index
+title: "Registrar Logs no Event Viewer com Delphi"
+date: 2011-05-19
 comments: true
 categories: 
-- desenvolvimento
-- delphi
+- dev
 tags: 
 - delphi
 - di
@@ -16,9 +14,9 @@ lang: pt
 
 Pessoal, estudando formas de gravar logs da aplica&#231;&#227;o, me lembrei do **Event Viewer** do **Windows**, tempo atr&#225;s utilizava classes do **.Net** em **C#** para fazer este logs e n&#227;o mais em arquivos textos. Resolvi estudar se era poss&#237;vel utilizar a mesma t&#233;cnica em **Delphi XE** e descobri que sim achei interessante compartilhar com voc&#234;s. Vale lembrar que n&#227;o &#233; algo novo, funciona em vers&#245;es anteriores do **Delphi**.
 
-E para n&#227;o ficar apenas em um exemplo de como utilizar o **Event Viewer** com **Delphi**, desenvolvi toda uma estrutura de logs de mensagens utilizando **Interfaces**, onde ficar&#225; f&#225;cil caso queiram mudar a forma de grava&#231;&#227;o dos logs das aplica&#231;&#245;es de voc&#234;s, e tamb&#233;m, estou utilizando neste exemplo uma arquitetura onde ser&#225; f&#225;cil aplicar **IoC** (**Invers&#227;o de Controle**) e **DI** (**Inje&#231;&#227;o de Depend&#234;ncias**), vou deixar para falar deste dois Padr&#245;es em outro post.
-
 <!--more-->
+
+E para n&#227;o ficar apenas em um exemplo de como utilizar o **Event Viewer** com **Delphi**, desenvolvi toda uma estrutura de logs de mensagens utilizando **Interfaces**, onde ficar&#225; f&#225;cil caso queiram mudar a forma de grava&#231;&#227;o dos logs das aplica&#231;&#245;es de voc&#234;s, e tamb&#233;m, estou utilizando neste exemplo uma arquitetura onde ser&#225; f&#225;cil aplicar **IoC** (**Invers&#227;o de Controle**) e **DI** (**Inje&#231;&#227;o de Depend&#234;ncias**), vou deixar para falar deste dois Padr&#245;es em outro post.
 
 O primeiro c&#243;digo &#233; o nosso **enumerator**, que ir&#225; conter os tipos poss&#237;veis de log das mensagens da aplica&#231;&#227;o. N&#227;o &#233; necess&#225;rio separar este **enumerator** da **unit** que ir&#225; conter a nossa **interface** descrita abaixo, fiz est&#225; separa&#231;&#227;o apenas para organizar melhor os arquivos da aplica&#231;&#227;o.
 

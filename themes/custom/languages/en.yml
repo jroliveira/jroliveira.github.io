@@ -1,9 +1,15 @@
-read_more: Read more
-read_more_title: read more about %s
+page:
+  index: Index
+  no_results: Sorry, no results were found
+  not_found:
+    title: Oops! Page not found
+    notes: Sorry, the page you are looking for does not exist, have been removed, name changed or is temporarily unavailable.
+  return_to_home: Return to homepage
 
-posts: All posts
-posts_about: Posts about %s
+post:
+  about: Posts about %s
+  all: All posts
+  search: Search posts
 
-search_post: Search post
-
-tag: tag
+tag:
+  all: All tags

@@ -1,15 +1,11 @@
-<h2 class="title">
-  <%= _p('posts_about', page.tag) %>
+<h2 class="page__title">
+  <%= _p('post.about', page.tag) %>
 </h2>
 
-<% page
-    .posts
-    .filter((post, pos) => page.posts
-      .map(item => item.date.format())
-      .indexOf(post.date.format()) == pos)
-    .sort('-date')
-    .forEach(post => { %>
+<div class="page__content">
+  <% page.posts.groupByDate().forEach(post => { %>
 
-  <%- partial('_partial/post/resume', {post: post}) %>
+    <%- partial('post/_partial/resume', {post: post}) %>
 
-<% }) %>
+  <% }) %>
+</div>

@@ -1,0 +1,11 @@
+<h2 class="page__title">
+  <%= page.title %>
+</h2>
+
+<div class="page__content">
+  <% site.posts.filterByLang(page.lang).forEach(post => { %>
+
+    <%- partial('post/_partial/resume', {post: post}) %>
+
+  <% }) %>
+</div>

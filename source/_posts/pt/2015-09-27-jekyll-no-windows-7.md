@@ -1,12 +1,10 @@
 ---
-layout: post
-title: Jekyll no Windows 7
-description: Blog pessoal com assuntos dedicados a desenvolvimento de software nas linguagens de programação C Sharp, Delphi, ASP .NET, PHP e Javascript.
-date: 2015-09-27 00:51
+layout: post/index
+title: "Jekyll no Windows 7"
+date: 2015-09-27
 comments: true
 categories:
-- desenvolvimento
-- jekyll
+- dev
 tags: 
 - jekyll
 lang: pt
@@ -14,13 +12,13 @@ lang: pt
 
 Olá pessoal, neste post eu vou explicar como instalar o Jekyll no Windows 7.
 
+<!--more-->
+
 **Instalar o Ruby**
 
 A versão que estou utilizando neste artigo é a [Ruby 2.2.3-x64][ruby].
 Após baixar o arquivo, instale no caminho **c:\Ruby22-x64** e selecione a opção **Add Ruby executables to your PATH**.
 Para verificar se o Ruby foi instalado corretamente, abra o powershell e execute o comando abaixo.
-
-<!--more-->
 
 ```
 PS C:\> ruby -v

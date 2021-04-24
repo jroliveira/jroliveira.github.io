@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Junior Oliveira
-short_title: Jr Oliveira
-description: Blog pessoal com assuntos dedicados a desenvolvimento de software nas linguagens de programação C Sharp, Delphi, ASP .NET, PHP e Javascript.
+title: "Junior Oliveira"
+short_title: "Jr Oliveira"
+description: "Blog about code and stuff."
 author: Junior Oliveira
 language:
 - en
@@ -31,7 +31,7 @@ skip_render:
 
 # Writing
 new_post_name: :lang/:year-:month-:day-:title.md
-default_layout: post
+default_layout: site/page
 titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0

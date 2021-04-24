@@ -1,13 +1,10 @@
 ---
-layout: post
-title: Consumindo DataSnap Server com C#
-description: Blog pessoal com assuntos dedicados a desenvolvimento de software nas linguagens de programação C Sharp, Delphi, ASP .NET, PHP e Javascript.
-date: 2011-04-01 06:22
+layout: post/index
+title: "Consumindo DataSnap Server com C#"
+date: 2011-04-01
 comments: true
 categories: 
-- desenvolvimento
-- delphi
-- csharp
+- dev
 tags: 
 - csharp
 - delphi

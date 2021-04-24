@@ -1,12 +1,10 @@
 ---
-layout: post
-title: Strategy Pattern
-description: Blog pessoal com assuntos dedicados a desenvolvimento de software nas linguagens de programação C Sharp, Delphi, ASP .NET, PHP e Javascript.
-date: 2012-10-30 22:51
+layout: post/index
+title: "Strategy Pattern"
+date: 2012-10-30
 comments: true
 categories:
-- desenvolvimento
-- csharp
+- dev
 tags:
 - csharp
 - design pattern
@@ -17,11 +15,11 @@ lang: pt
 
 Ol&#225; pessoal, vou falar um pouco sobre **Strategy Pattern**, &#233; um **Design Pattern** que ficou famoso depois de ser catalogado pelo **GoF (Gang Of Four)** formado por Erich Gamma, Richard Helm, Ralph Johnson e John Vlissides no livro *"Design Patterns: Elements of Reusable Object-Oriented Software"*.
 
+<!--more-->
+
 Segue abaixo a defini&#231;&#227;o de acordo com o livro:
 
 > "Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from clients that use it."
-
-<!--more-->
 
 Vamos ao exemplo para ficar mais claro a defini&#231;&#227;o.
 

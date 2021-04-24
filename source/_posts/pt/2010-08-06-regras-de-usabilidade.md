@@ -1,17 +1,18 @@
 ---
-layout: post
-title: Regras de usabilidade
-description: Blog pessoal com assuntos dedicados a desenvolvimento de software nas linguagens de programação C Sharp, Delphi, ASP .NET, PHP e Javascript.
-date: 2010-08-06 08:35
+layout: post/index
+title: "Regras de usabilidade"
+date: 2010-08-06
 comments: true
 categories: 
-- desenvolvimento
+- dev
 tags: 
-- usabilidade
+- ux
 lang: pt
 ---
 
 Segue algumas regras de usabilidade para aplica&ccedil;&otilde;es web.
+
+<!--more-->
 
 1&#186;. Clareza na arquitetura da informa&ccedil;&atilde;o:
 
@@ -24,8 +25,6 @@ Segue algumas regras de usabilidade para aplica&ccedil;&otilde;es web.
 3&#186;. Simplicidade:
 
 *P&aacute;ginas sem acumulo de informa&ccedil;&otilde;es.*
-
-<!--more-->
 
 4&#186;. Relev&acirc;ncia de conte&uacute;do:
 

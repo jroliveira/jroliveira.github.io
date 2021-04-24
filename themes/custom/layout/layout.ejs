@@ -11,13 +11,22 @@
     if (page.title) {
       title = `${page.title} ~ `;
     } else if (is_tag()) {
-      title = `${page.tag} ~ `;
+      title = `${_p('post.about', page.tag)} ~ `;
     }
     title += config.title;
 
-    var type = page.title ? 'article' : 'website';
+    var type = is_post()
+        ? 'article'
+        : 'website';
+
     var description = page.description || config.description;
-    var tags = page.tags ? page.tags.map(tag => tag.name) : ['delphi', 'php', 'csharp'];
+    var tags = page.keywords
+        ? page.keywords
+        : page.posts
+          ? [...new Set(page.posts.map(post => post.tags.map(tag => tag.name)).flat())]
+          : page.tags
+            ? page.tags.map(tag => tag.name)
+            : [...new Set(site.posts.map(post => post.tags.map(tag => tag.name)).flat())]
   %>
 
   <title>
@@ -42,25 +51,33 @@
   <link rel="manifest" href="/manifest.json" async />
   <link rel="stylesheet" href="/assets/styles/main.css" async />
 
+  <%- asset("assets/styles/fontawesome.css") %>
+
   <%- partial('_widget/google-analytics') %>
 </head>
 
 <body>
 
   <header class="site-header">
-    <%- partial('_partial/site/header') %>
+    <div class="page__container">
+      <%- partial('site/_partial/header') %>
+    </div>
   </header>
 
   <main class="site-main">
-    <%- body %>
+    <div class="page__container">
+      <%- body %>
 
-    <aside>
-      <%- partial('_widget/disqus-comments') %>
-    </aside>
+      <aside>
+        <%- partial('_widget/disqus-comments') %>
+      </aside>
+    </div>
   </main>
 
   <footer class="site-footer">
-    <%- partial('_partial/site/footer') %>
+    <div class="page__container">
+      <%- partial('site/_partial/footer') %>
+    </div>
   </footer>
 
   <noscript>

@@ -31,6 +31,7 @@
     "version": "4.2.1"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "Skeleton-Stylus": "github:johngerome/Skeleton-Stylus",
     "font-awesome-stylus": "^4.7.1",
     "hexo": "^4.2.1",
@@ -51,6 +52,7 @@
     "@commitlint/cli": "9.1.1",
     "@commitlint/config-conventional": "9.1.1",
     "husky": "4.2.5",
+    "md5": "^2.3.0",
     "standard-version": "8.0.2"
   },
   "husky": {

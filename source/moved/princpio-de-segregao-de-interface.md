@@ -1,5 +1,5 @@
 ---
-layout: redirect
+layout: site/redirect
 redirect_to: pt/princpio-de-segregao-de-interface
 permalink: princpio-de-segregao-de-interface/
 ---

@@ -1,12 +1,11 @@
 ---
-layout: post
-title: Criando aplicação web com Nancy
-description: Post sobre Nancy, o que é, como funciona, quais as vantagens como instalar, como usar e uns exemplos iniciais.
-date: 2015-11-08 14:40
+layout: post/index
+title: "Criando aplicação web com Nancy"
+description: "Post sobre Nancy, o que é, como funciona, quais as vantagens como instalar, como usar e uns exemplos iniciais."
+date: 2015-11-08
 comments: true
 categories:
-- desenvolvimento
-- csharp
+- dev
 tags:
 - csharp
 - nancy
@@ -15,14 +14,14 @@ lang: pt
 
 Olá pessoal, hoje eu vou falar um pouco sobre <a href="http://nancyfx.org/" target="_blank" rel="external noopener">Nancy</a>.
 
+<!--more-->
+
 **O que é?**
 
 É um framework leve e simples para construção serviços **HTTP** usando tecnologia **.Net** e **Mono**, e fornece uma **Domain Specific Language (DSL)** para devolver uma resposta de forma simples.  
 Foi projetada para rodar em qualquer lugar, já que ela possui seus próprios objetos de solicitação e resposta.  
 Um dos conceitos fundamentais em Nancy são os hosts. Um host atua como um adaptador para um ambiente de hospedagem, permitindo assim que ela possa ser executada com as tecnologias existentes, como **ASP.NET**, **WCF** e **Owin**, ou integrado em qualquer aplicação.  
 Nancy é um projeto open source, hospedado no GitHub e está licenciado sob a **MIT license**.
-
-<!--more-->
 
 **Como instalar?**
 

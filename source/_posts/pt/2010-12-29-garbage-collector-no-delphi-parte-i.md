@@ -1,12 +1,10 @@
 ---
-layout: post
-title: Garbage Collector no Delphi - Parte I
-description: Blog pessoal com assuntos dedicados a desenvolvimento de software nas linguagens de programação C Sharp, Delphi, ASP .NET, PHP e Javascript.
-date: 2010-12-29 22:33
+layout: post/index
+title: "Garbage Collector no Delphi - Parte I"
+date: 2010-12-29
 comments: true
 categories: 
-- desenvolvimento
-- delphi
+- dev
 tags: 
 - delphi
 lang: pt
@@ -14,9 +12,9 @@ lang: pt
 
 Ol&#225; pessoal, depois de algum tempo sem postar venho com uma novidade para voc&#234;s, para alguns isto pode n&#227;o ser novidade, mas tenho certeza que para outros &#233;, pelo menos para mim foi novidade, programo em Delphi desde 2005 mais ou menos e fiquei sabendo que o Delphi tinha **Garbage Collector** s&#243; a dias atr&#225;s ent&#227;o resolvi criar uma implementa&#231;&#227;o de exemplo.
 
-Neste primeiro exemplo vou trabalhar apenas com objetos que herdam de uma classe **Super Classe**.
-
 <!--more-->
+
+Neste primeiro exemplo vou trabalhar apenas com objetos que herdam de uma classe **Super Classe**.
 
 A primeira implementa&#231;&#227;o &#233; da **Super Classe** na qual todas as outras classes ir&#225; herd&#225;-la, a classe &#233; bem simples ela tem uma interface do **IModel** que &#233; do mesmo tipo da **IUnknown** que ser&#225; respons&#225;vel por dizer que o objeto ser&#225; liberado automaticamente e a classe **TModel** &#233; quem ir&#225; herdar **TInterfacedObject** e a inteface **IUnknown**.
 

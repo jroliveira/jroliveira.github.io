@@ -1,0 +1,19 @@
+<article class="post-item">
+  <h5>
+    <a class="post-item__title" href="<%= url_for(post.path) %>">
+      <%= post.title %>
+    </a>
+
+    <p class="post__meta">
+      <%- partial('_utilities/date', {entry: post}) %>
+      <%- partial('_utilities/pipe') %>
+      <%- partial('_utilities/lang', {entry: post}) %>
+      <%- partial('_utilities/pipe') %>
+      <%- partial('_utilities/tag', {entry: post}) %>
+    </p>
+  </h5>
+
+  <div class="post-item__excerpt">
+    <%- post.excerpt %>
+  </div>
+</article>

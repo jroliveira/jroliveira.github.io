@@ -1,0 +1,41 @@
+.site-header .site-branding
+  color #222
+
+.site-branding
+  display inline-table
+
+  &__logo
+    background-color #c1a8b2
+    border-radius 21px
+    display table-cell
+    height 24px
+    width 24px
+
+  &__title--full
+  &__title--short
+    font-size 1.5rem
+    letter-spacing .03rem
+    padding-left 8px
+    vertical-align middle
+
+  &__title--full
+    display none
+
+  &__title--short
+    display table-cell
+
+@media (min-width: 550px)
+  .site-branding
+    &__logo
+      height 28px
+      width 28px
+
+    &__title--full,
+    &__title--short
+      font-size 1.8rem
+
+    &__title--full
+      display table-cell
+
+    &__title--short
+      display none
