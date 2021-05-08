@@ -1,17 +1,23 @@
 .page__title
+  & .poem__meta
   & .post__meta
   & .page__meta
     font-size 0.45em
     letter-spacing .01rem
 
+.poem .page__title
+.poem-item__title
+.poem-item__title:hover
 .post-item__title
 .post-item__title:hover
   color #222
 
+.poem-item
 .post-item
   & p
     margin 0
 
+.poem-item
 .post-item
   border-top 1px solid #eee
   padding 3rem 0
@@ -31,9 +37,11 @@
 
 @media (min-width: 550px)
   .page__meta
+  .poem__meta
   .post__meta
     font-size 0.7em
     letter-spacing 0
 
+  .poem-item__title
   .post-item__title
     font-size 2.4rem

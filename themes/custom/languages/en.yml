@@ -6,6 +6,9 @@ page:
     notes: Sorry, the page you are looking for does not exist, have been removed, name changed or is temporarily unavailable.
   return_to_home: Return to homepage
 
+poem:
+  all: All poems
+
 post:
   about: Posts about %s
   all: All posts

@@ -12,6 +12,8 @@ self
         'assets/images/favicon@256.png',
         'assets/images/favicon@512.png',
 
+        'assets/images/menu/poem.svg',
+
         'assets/images/social-networks/500px.svg',
         'assets/images/social-networks/github.svg',
         'assets/images/social-networks/instagram.svg',

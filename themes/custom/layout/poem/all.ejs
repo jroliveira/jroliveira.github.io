@@ -1,0 +1,11 @@
+<h2 class="page__title">
+  <%= __('poem.all') %>
+</h2>
+
+<div class="page__content">
+  <% site.posts.groupByDate().withCategories(['poem']).forEach(post => { %>
+
+    <%- partial('poem/_partial/resume', {poem: post}) %>
+
+  <% }) %>
+</div>

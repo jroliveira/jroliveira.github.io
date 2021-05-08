@@ -11,6 +11,20 @@
 </a>
 
 <ul class="menu">
+  <% if (site.posts.withCategories(['poem']).length > 0) { %>
+  <li class="menu-item">
+    <a href="/poems" title="<%= __('poem.all') %>">
+      <img class="menu-item__img" src="/assets/images/menu/poem.svg" alt="<%= __('poem.all') %>">
+    </a>
+  </li>
+  <% } %>
+
+  <% if (site.posts.withCategories(['poem']).length > 0) { %>
+  <li class="menu-item">
+    <%- partial('_utilities/pipe') %>
+  </li>
+  <% } %>
+
   <li class="menu-item">
     <a class="menu-item__icon fas fa-search" href="/search" title="<%= __('post.search') %>"></a>
   </li>
