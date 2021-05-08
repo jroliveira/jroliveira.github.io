@@ -1,0 +1,11 @@
+<article class="poem-item">
+  <h5>
+    <a class="poem-item__title" href="<%= url_for(poem.path) %>">
+      <%= poem.title %>
+    </a>
+  </h5>
+
+  <div class="poem-item__excerpt">
+    <%- poem.excerpt %>
+  </div>
+</article>

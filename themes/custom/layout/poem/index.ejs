@@ -1,0 +1,13 @@
+<article class="poem">
+  <h2 class="page__title">
+    <%= page.title %>
+
+    <p class="poem__meta">
+      <%- partial('_utilities/date', {entry: page}) %>
+    </p>
+  </h2>
+
+  <div class="page__content">
+    <%- page.content %>
+  </div>
+</article>

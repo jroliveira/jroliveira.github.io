@@ -6,6 +6,9 @@ page:
     notes: Desculpe, a página que você está procurando não existe, foi removida, nome mudou ou está temporariamente indisponível.
   return_to_home: Retornar a página inicial
 
+poem:
+  all: Todos os poemas
+
 post:
   about: Posts sobre %s
   all: Todos os posts
