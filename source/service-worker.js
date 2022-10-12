@@ -1,4 +1,4 @@
-const version = '2.2';
+const version = '2.3';
 
 self
   .addEventListener('install', event => event
@@ -20,9 +20,12 @@ self
         'assets/images/social-networks/linkedin.svg',
         'assets/images/social-networks/twitter.svg',
 
+        'assets/fonts/Orbitron-Regular.ttf',
         'assets/fonts/raleway-light2.woff2',
         'assets/fonts/raleway-regular2.woff2',
         'assets/fonts/raleway-semibold2.woff2',
+        'assets/fonts/xwing-miniatures-ships.ttf',
+        'assets/fonts/xwing-miniatures.ttf',
       ]))));
 
 self

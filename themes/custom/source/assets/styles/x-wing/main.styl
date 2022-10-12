@@ -1,0 +1,95 @@
+@font-face
+  font-family Orbitron;
+  src url('/assets/fonts/Orbitron-Regular.ttf')
+
+.x-wing__title
+.x-wing__main
+.x-wing__ref
+.x-wing__rules h5
+  font-family Orbitron
+
+.x-wing__ref
+  font-size 1.2rem
+
+  & > img
+    width 16px
+    height 16px
+
+.x-wing__title
+  small
+    font-size 50%
+
+.x-wing__rules
+  & > ul
+    margin 1.5rem 0 !important
+
+  ul
+  ol
+    font-size 96% !important
+    line-height 1.8
+
+  ul
+  ol
+    &[type=""]
+    &[type="a"]
+    &[type="i"]
+      margin 1.5rem 0 1.5rem 1.5rem
+
+    &[type=""]
+      list-style none
+
+    &[type="a"]
+      list-style lower-alpha
+
+    &[type="i"]
+      list-style lower-roman
+
+  ul[type=""] > li > ol
+    list-style decimal
+    margin 1.5rem 0 1.5rem 1.5rem !important
+
+  .note
+    display inline-block
+    background-color #f9f9f9
+    border-radius 5px
+    padding 0.5rem 1rem
+
+    ul
+    ul *
+      margin 0
+      list-style-type "✓ "
+
+      ul
+        margin 0 1.5rem
+
+  li:has(> i[class*="xf-token-"])
+    line-height 2rem
+
+i[class*="xf-"]
+  font-size 1.7rem
+
+i[class*="xf-token-"]
+  font-size 2.5rem
+
+.xf-recurring
+.xf-negativerecurring
+  font-size 2.0rem
+  font-weight bolder
+
+.xf-token-calculate
+.xf-token-focus
+  color green
+
+.xf-token-disarm
+.xf-token-jam
+  color orange
+
+.xf-rangebonusindicator
+.xf-token-deplete
+.xf-token-ion
+.xf-token-strain
+.xf-token-stress
+  color red
+
+.xf-token-force
+  color purple

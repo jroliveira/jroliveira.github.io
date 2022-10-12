@@ -1,0 +1,216 @@
+Execute Maneuver
+<ol type="i">
+  <li>
+    Maneuver Ship
+    <br>
+    <div class="note">
+      <ul>
+        <li title="ION pg.13">
+          if has a <%- xw_token('ion') %>
+          <ul>
+            <li>perform a blue 1 [ <%- xw_symbol('bankleft') %> <%- xw_symbol('straight') %> <%- xw_symbol('bankright') %> ] with the same direction shown on the dial;</li>
+          </ul>
+        </li>
+
+        <li title="OBSTACLES pg.15">
+          if move through
+          <ul>
+            <li>
+              an obstacle
+              <ul>
+                <li>
+                  asteroid
+                  <ul>
+                    <li>suffers 1 <%- xw_symbol('hit') %>;</li>
+                    <li>
+                      roll 1 attack die, if:
+                      <ul>
+                        <li><%- xw_symbol('hit') %>, suffers 1 <%- xw_symbol('hit') %>;</li>
+                        <li><%- xw_symbol('crit') %>, suffers 1 <%- xw_symbol('hit') %>;</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  blaze
+                  <ul>
+                    <li>
+                      roll 1 attack die, if:
+                      <ul>
+                        <li><%- xw_symbol('hit') %>, suffers 1 <%- xw_symbol('hit') %>;</li>
+                        <li><%- xw_symbol('crit') %>, suffers 1 <%- xw_symbol('hit') %>;</li>
+                        <li><%- xw_symbol('focus') %>, add 1 <%- xw_token('stress') %>;</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  debris cloud
+                  <ul>
+                    <li>add 1 <%- xw_token('stress') %>;</li>
+                    <li>
+                      roll 1 attack die, if:
+                      <ul>
+                        <li><%- xw_symbol('hit') %>, suffers 1 <%- xw_symbol('hit') %>;</li>
+                        <li><%- xw_symbol('crit') %>, suffers 1 <%- xw_symbol('crit') %>;</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  electro-chaff cloud
+                  <ul>
+                    <li>remove all <%- xw_symbol('lock') %> from this ship and on this ship;</li>
+                    <li>add 1 <%- xw_token('jam') %>;</li>
+                    <li>
+                      roll 1 attack die, if:
+                      <ul>
+                        <li><%- xw_symbol('hit') %>, add 1 <%- xw_token('stress') %>;</li>
+                        <li><%- xw_symbol('crit') %>, add 1 <%- xw_token('stress') %>;</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  gas cloud
+                  <ul>
+                    <li>remove all <%- xw_symbol('lock') %> from this ship and on this ship;</li>
+                    <li>add 1 <%- xw_token('strain') %>;</li>
+                    <li>
+                      roll 1 attack die, if:
+                      <ul>
+                        <li><%- xw_symbol('hit') %>, add 1 <%- xw_token('ion') %>;</li>
+                        <li><%- xw_symbol('crit') %>, add 3 <%- xw_token('ion') %>;</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  loose cargo
+                  <ul>
+                    <li>add 1 <%- xw_token('strain') %>;</li>
+                    <li>
+                      roll 1 attack die, if:
+                      <ul>
+                        <li><%- xw_symbol('hit') %>, add 1 <%- xw_token('stress') %>;</li>
+                        <li><%- xw_symbol('crit') %>, add 1 <%- xw_token('stress') %>;</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  spare parts
+                  <ul>
+                    <li>add 1 <%- xw_token('strain') %>;</li>
+                    <li>
+                      roll 1 attack die, if:
+                      <ul>
+                        <li><%- xw_symbol('hit') %>, add 1 <%- xw_token('stress') %>;</li>
+                        <li><%- xw_symbol('crit') %>, add 1 <%- xw_token('stress') %>;</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li title="OBSTACLES pg.15">
+          if overlapped
+          <ul>
+            <li>
+              an obstacle
+              <ul>
+                <li>
+                  <strong>asteroid</strong> or <strong>debris cloud</strong>
+                  <ul>
+                    <li>cannot perform attacks;</li>
+                  </ul>
+                </li>
+
+                <li>
+                  <strong>electro-chaff cloud</strong> or <strong>gas cloud</strong>
+                  <ul>
+                    <li>cannot acquire <%- xw_symbol('lock') %>;</li>
+                    <li>cannot be <%- xw_symbol('lock') %>;</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              a <strong>friendly</strong> or <strong>allied</strong> ship
+              <ul>
+                <li>
+                  roll 1 attack die, if:
+                  <ul>
+                    <li><%- xw_symbol('hit') %>, add 1 <%- xw_symbol('hit') %>;</li>
+                    <li><%- xw_symbol('crit') %>, add 1 <%- xw_symbol('hit') %>;</li>
+                  </ul>
+                </li>
+                <li>skips its Perform Action step;</li>
+              </ul>
+            </li>
+
+            <li>
+              a <strong>enemy</strong> ship
+              <ul>
+                <li>
+                  if is not <%- xw_token('stress') %>:
+                  <ul>
+                    <li>may add a <%- xw_token('focus') %> or <%- xw_token('calculate') %> from its action bar;</li>
+                  </ul>
+                </li>
+                <li>skips its Perform Action step;</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </li>
+
+  <li>
+    Check Difficulty
+    <br>
+    <div class="note">
+      <ul>
+        <li>
+          if the maneuver is:
+          <ul>
+            <li title="MANEUVER/Check Difficulty pg.15">
+              <span class="red">red</span>
+              <ul>
+                <li>if already has a <%- xw_token('stress') %>, then performs a white [ 2 <%- xw_symbol('straight') %> ] instead;</li>
+                <li>add 1 <%- xw_token('stress') %>;</li>
+              </ul>
+            </li>
+
+            <li title="MANEUVER/Check Difficulty pg.15">
+              <span class="blue">blue</span>
+              <ul>
+                <li>remove 1 <%- xw_token('stress') %>;</li>
+                <li>remove 1 <%- xw_token('strain') %>;</li>
+                <li>remove 1 <%- xw_token('deplete') %>;</li>
+              </ul>
+            </li>
+
+            <li title="DIFFICULTY pg.11">
+              <span class="purple">purple</span>
+              <ul>
+                <li>spend 1 <%- xw_token('force') %>;</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </li>
+</ol>

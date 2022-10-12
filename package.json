@@ -46,7 +46,8 @@
     "hexo-server": "^1.0.0",
     "hexo-uglify": "^2.0.0",
     "normalize-styl": "^4.1.1",
-    "nunjucks": "^3.0.1"
+    "nunjucks": "^3.0.1",
+    "xwing-miniatures-font": "^2.6.9"
   },
   "devDependencies": {
     "@commitlint/cli": "9.1.1",

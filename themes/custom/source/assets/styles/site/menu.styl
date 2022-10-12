@@ -15,6 +15,9 @@
   border-radius 5px
   padding 4px
 
+.menu-item__icon:has(> .xf)
+  padding 2.5px
+
 .menu-item__icon
   background-color #222
   border solid 1px #222
@@ -34,6 +37,7 @@
 
 @media (min-width: 550px)
   .menu-item__icon
+  .menu-item__icon > .xf
     font-size 18px
 
   .menu-item__img

@@ -1,0 +1,141 @@
+<strong>Engagement</strong>
+
+<ol type="a">
+  <li>
+    Declare Target
+    <br>
+    <div class="note">
+      <ul>
+        <li title="DISARMED pg.11">if has a <%- xw_token('disarm') %>, cannot perform attacks;</li>
+      </ul>
+    </div>
+    <ol type="i">
+      <li>Measure Range</li>
+      <li>
+        Choose Weapon
+        <br>
+        <div class="note">
+          <ul>
+            <li title="PRIMARY WEAPON pg.17">primary weapon range <strong>0 → 3</strong></li>
+          </ul>
+        </div>
+      </li>
+      <li>Declare Defender</li>
+      <li>Pay Costs</li>
+    </ol>
+  </li>
+
+  <li>
+    Attack Dice
+    <ol type="i">
+      <li>
+        Roll Attack Dice
+        <br>
+        <div class="note">
+          <ul>
+            <li title="ATTACK/Attack Dice/Roll Attack Dice pg.5">minimum of <strong>0</strong>;</li>
+            <li title="ATTACK/Attack Dice/Roll Attack Dice pg.5">maximum of <strong>6</strong>;</li>
+            <li>
+              add <strong>1</strong> die if:
+              <ul>
+                <li title="RANGE BONUS pg.17">range <strong>1</strong>;</li>
+                <li title="RANGE BONUS pg.17"><strong>not <%- xw_symbol('rangebonusindicator') %></strong>;</li>
+              </ul>
+            </li>
+            <li>
+              remove <strong>1</strong> die if:
+              <ul>
+                <li title="DEPLETE pg.10">has a <%- xw_token('deplete') %>;</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <li>
+        Modify Attack Dice
+        <br>
+        <div class="note">
+          <ul>
+            <li title="ATTACK/Attack Dice/Modify Attack Dice pg.5">
+              order to resolves their abilities:
+              <ul>
+                <li>1º defending player</strong>;
+                <li>2º attacking player</strong>;
+              </ul>
+            </li>
+            <li title="ATTACK/Attack Dice pg.5">if <strong>range 0</strong>, cannot be modified;</li>
+            <li title="ATTACK/Attack Dice pg.5">each die can only be rerolled <strong>once</strong>;
+          </ul>
+        </div>
+      </li>
+    </ol>
+  </li>
+
+  <li>
+    Defense Dice
+    <ol type="i">
+      <li>
+        Roll Defense Dice
+        <br>
+        <div class="note">
+          <ul>
+            <li title="ATTACK/Defense Dice/Roll Defense Dice pg.5">minimum of <strong>0</strong>;</li>
+            <li title="ATTACK/Defense Dice/Roll Defense Dice pg.5">maximum of <strong>6</strong>;</li>
+            <li>
+              add <strong>+1</strong> die if:
+              <ul>
+                <li title="RANGE BONUS pg.17">range <strong>3</strong>;</li>
+                <li title="OBSTRUCTED pg.16">if at least <strong>1 obstacle</strong> obstructs;</li>
+              </ul>
+            </li>
+            <li>
+              remove <strong>1</strong> die if:
+              <ul>
+                <li title="STRAIN pg.21">has a <%- xw_token('strain') %>;</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <li>
+        Modify Defense Dice
+        <br>
+        <div class="note">
+          <ul>
+            <li title="ATTACK/Defense Dice/Modify Defense Dice pg.5">
+              order to resolves their abilities:
+              <ul>
+                <li>1º attacking player</strong>;
+                <li>2º defending player</strong>;
+              </ul>
+            </li>
+            <li title="ATTACK/Defense Dice pg.5">if <strong>range 0</strong>, enemy ships cannot reduce, cancel or modify your results;</li>
+            <li title="ATTACK/Defense Dice pg.5">each die can only be rerolled <strong>once</strong>;
+          </ul>
+        </div>
+      </li>
+    </ol>
+  </li>
+
+  <li>
+    Neutralize Results
+    <br>
+    <div class="note">
+      <ul>
+        <li title="ATTACK/Neutralize Results pg.5">
+          results are canceled if:
+          <ul>
+            <li>pairs of <%- xw_symbol('evade') %> and <%- xw_symbol('crit') %>;</li>
+            <li>pairs of <%- xw_symbol('evade') %> and <%- xw_symbol('hit') %>;</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </li>
+
+  <li>Deal Damage</li>
+
+  <li>Aftermath</li>
+</ol>
