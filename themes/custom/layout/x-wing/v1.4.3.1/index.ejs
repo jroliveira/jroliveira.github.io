@@ -1,0 +1,40 @@
+<h2 class="page__title x-wing__title">
+  Star Wars: X-Wing
+  <small>v1.4.3.1</small>
+</h2>
+
+<a class="x-wing__ref" href="https://static1.squarespace.com/static/5ce432b1f9d2be000134d8ae/t/628ff0489e47d06795ee123c/1653600329287/SWZ_RulesReference_v1.4.3.1_web.pdf">
+  [ <img src="/assets/images/x-wing/amg.png"></img>&nbsp; Atomic Mass Games ] Star Wars: X-Wing Official Rules Reference v1.4.3.1
+</a>
+
+<div class="page__content x-wing__rules">
+  <ul type="">
+    <li>
+      <h5>Setup</h5>
+      <ol>
+        <li>Gather Forces</li>
+        <li><%- partial('setup/determine-player-order') %></li>
+        <li>Establish Play Area</li>
+        <li><%- partial('setup/place-obstacles') %></li>
+        <li>Place Forces</li>
+        <li>Prepare Other Components</li>
+      </ol>
+    </li>
+  </ul>
+
+  <ul type="">
+    <li class="round">
+      <h5>Round</h5>
+
+      <ol>
+        <li id="Planning"><%- partial('round/planning') %></li>
+        <li><%- partial('round/system') %></li>
+        <li><%- partial('round/activation/index') %></li>
+        <li><%- partial('round/engagement/index') %></li>
+        <li><%- partial('round/end') %></li>
+      </ol>
+    </li>
+  </ul>
+
+  back to <a href="#Planning">1. Planning</a>
+</div>
