@@ -1,6 +1,6 @@
 ---
 layout: x-wing/v1.4.3.1/index
-title: "X-Wing"
+title: "Star Wars: X-Wing v1.4.3.1"
 comments: false
 categories:
 - game
