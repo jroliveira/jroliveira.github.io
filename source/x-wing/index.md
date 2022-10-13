@@ -1,6 +1,6 @@
 ---
 layout: x-wing/index
-title: "X-Wing"
+title: "Star Wars: X-Wing"
 comments: false
 categories:
 - game

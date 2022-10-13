@@ -1,4 +1,4 @@
-const version = '2.3';
+const version = '2.4';
 
 self
   .addEventListener('install', event => event
@@ -19,6 +19,8 @@ self
         'assets/images/social-networks/instagram.svg',
         'assets/images/social-networks/linkedin.svg',
         'assets/images/social-networks/twitter.svg',
+
+        'assets/images/shared/link-external.svg',
 
         'assets/fonts/Orbitron-Regular.ttf',
         'assets/fonts/raleway-light2.woff2',

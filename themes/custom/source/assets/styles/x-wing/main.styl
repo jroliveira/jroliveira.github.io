@@ -1,5 +1,5 @@
 @font-face
-  font-family Orbitron;
+  font-family Orbitron
   src url('/assets/fonts/Orbitron-Regular.ttf')
 
 .x-wing__title
@@ -9,7 +9,12 @@
   font-family Orbitron
 
 .x-wing__ref
+  background-image url(/assets/images/shared/link-external.svg)
+  background-position center right
+  background-repeat no-repeat
+  background-size 0.857em
   font-size 1.2rem
+  padding-right 1.1em
 
   & > img
     width 16px
@@ -63,7 +68,7 @@
         margin 0 1.5rem
 
   li:has(> i[class*="xf-token-"])
-    line-height 2rem
+    line-height 2.2rem
 
 i[class*="xf-"]
   font-size 1.7rem
@@ -78,18 +83,36 @@ i[class*="xf-token-"]
 
 .xf-token-calculate
 .xf-token-focus
-  color green
+  color #35B43B
 
 .xf-token-disarm
 .xf-token-jam
-  color orange
+  color #F39126
 
 .xf-rangebonusindicator
 .xf-token-deplete
 .xf-token-ion
 .xf-token-strain
 .xf-token-stress
-  color red
+  color #EB1F28
 
 .xf-token-force
-  color purple
+  color #AD6CFE
+
+@media (pointer: coarse), (hover: none)
+  [title]
+    position relative
+
+  [title]:focus::after
+    background-color #fff
+    border 1px solid #f1f1f1
+    border-radius 2px
+    box-shadow 2px 2px 3px #ccc
+    color #000
+    content attr(title)
+    font-size 1rem
+    left 0
+    padding 0 5px
+    position absolute
+    top 90%
+    z-index 1

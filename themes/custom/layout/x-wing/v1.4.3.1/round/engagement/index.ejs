@@ -1,71 +1,60 @@
 <strong>Engagement</strong>
-
 <ol type="a">
   <li>
-    Declare Target
+    <strong>Declare Target</strong>
     <br>
     <div class="note">
       <ul>
-        <li title="DISARMED pg.11">if has a <%- xw_token('disarm') %>, cannot perform attacks;</li>
+        <li title="SYSTEM PHASE (p.21)" tabindex="0">starts with the lowest initiative;</li>
+        <li title="DISARMED (p.11)" tabindex="0">if <%- xw_token('disarm') %>, cannot perform attacks;</li>
       </ul>
     </div>
     <ol type="i">
-      <li>Measure Range</li>
+      <li><strong>Measure Range</strong></li>
       <li>
-        Choose Weapon
+        <strong>Choose Weapon</strong>
         <br>
         <div class="note">
           <ul>
-            <li title="PRIMARY WEAPON pg.17">primary weapon range <strong>0 → 3</strong></li>
+            <li title="PRIMARY WEAPON (p.17)" tabindex="0"><strong>primary weapon</strong> range <strong>0 → 3</strong></li>
           </ul>
         </div>
       </li>
-      <li>Declare Defender</li>
-      <li>Pay Costs</li>
+      <li><strong>Declare Defender</strong></li>
+      <li><strong>Pay Costs</strong></li>
     </ol>
   </li>
 
   <li>
-    Attack Dice
+    <strong>Attack Dice</strong>
     <ol type="i">
       <li>
-        Roll Attack Dice
+        <strong>Roll Attack Dice</strong>
         <br>
         <div class="note">
           <ul>
-            <li title="ATTACK/Attack Dice/Roll Attack Dice pg.5">minimum of <strong>0</strong>;</li>
-            <li title="ATTACK/Attack Dice/Roll Attack Dice pg.5">maximum of <strong>6</strong>;</li>
-            <li>
-              add <strong>1</strong> die if:
-              <ul>
-                <li title="RANGE BONUS pg.17">range <strong>1</strong>;</li>
-                <li title="RANGE BONUS pg.17"><strong>not <%- xw_symbol('rangebonusindicator') %></strong>;</li>
-              </ul>
-            </li>
-            <li>
-              remove <strong>1</strong> die if:
-              <ul>
-                <li title="DEPLETE pg.10">has a <%- xw_token('deplete') %>;</li>
-              </ul>
-            </li>
+            <li title="ATTACK, Attack Dice, Roll Attack Dice (p.5)" tabindex="0">minimum of <strong>0</strong>;</li>
+            <li title="ATTACK, Attack Dice, Roll Attack Dice (p.5)" tabindex="0">maximum of <strong>6</strong>;</li>
+            <li title="RANGE BONUS (p.17)" tabindex="0">add <strong>1</strong> die if range <strong>1</strong> and not <strong><%- xw_symbol('rangebonusindicator') %></strong>;</li>
+            <li title="DEPLETE (p.10)" tabindex="0">remove <strong>1</strong> die if <%- xw_token('deplete') %>;</li>
           </ul>
         </div>
       </li>
 
       <li>
-        Modify Attack Dice
+        <strong>Modify Attack Dice</strong>
         <br>
         <div class="note">
           <ul>
-            <li title="ATTACK/Attack Dice/Modify Attack Dice pg.5">
+            <li title="ATTACK, Attack Dice, Modify Attack Dice (p.5)" tabindex="0">
               order to resolves their abilities:
               <ul>
                 <li>1º defending player</strong>;
                 <li>2º attacking player</strong>;
               </ul>
             </li>
-            <li title="ATTACK/Attack Dice pg.5">if <strong>range 0</strong>, cannot be modified;</li>
-            <li title="ATTACK/Attack Dice pg.5">each die can only be rerolled <strong>once</strong>;
+            <li title="ATTACK, Attack Dice (p.5)" tabindex="0">if range <strong>0</strong>, cannot be modified;</li>
+            <li title="ATTACK, Attack Dice (p.5)" tabindex="0">each die can only be rerolled <strong>once</strong>;
           </ul>
         </div>
       </li>
@@ -73,46 +62,41 @@
   </li>
 
   <li>
-    Defense Dice
+    <strong>Defense Dice</strong>
     <ol type="i">
       <li>
-        Roll Defense Dice
+        <strong>Roll Defense Dice</strong>
         <br>
         <div class="note">
           <ul>
-            <li title="ATTACK/Defense Dice/Roll Defense Dice pg.5">minimum of <strong>0</strong>;</li>
-            <li title="ATTACK/Defense Dice/Roll Defense Dice pg.5">maximum of <strong>6</strong>;</li>
+            <li title="ATTACK, Defense Dice, Roll Defense Dice (p.5)" tabindex="0">minimum of <strong>0</strong>;</li>
+            <li title="ATTACK, Defense Dice, Roll Defense Dice (p.5)" tabindex="0">maximum of <strong>6</strong>;</li>
             <li>
-              add <strong>+1</strong> die if:
+              add <strong>1</strong> die if:
               <ul>
-                <li title="RANGE BONUS pg.17">range <strong>3</strong>;</li>
-                <li title="OBSTRUCTED pg.16">if at least <strong>1 obstacle</strong> obstructs;</li>
+                <li title="RANGE BONUS (p.17)" tabindex="0">range <strong>3</strong> and not <strong><%- xw_symbol('rangebonusindicator') %></strong>;</li>
+                <li title="OBSTRUCTED (p.16)" tabindex="0">at least <strong>1</strong> <strong>obstacle</strong> obstructs;</li>
               </ul>
             </li>
-            <li>
-              remove <strong>1</strong> die if:
-              <ul>
-                <li title="STRAIN pg.21">has a <%- xw_token('strain') %>;</li>
-              </ul>
-            </li>
+            <li title="STRAIN (p.21)" tabindex="0">remove <strong>1</strong> die if <%- xw_token('strain') %>;</li>
           </ul>
         </div>
       </li>
 
       <li>
-        Modify Defense Dice
+        <strong>Modify Defense Dice</strong>
         <br>
         <div class="note">
           <ul>
-            <li title="ATTACK/Defense Dice/Modify Defense Dice pg.5">
+            <li title="ATTACK, Defense Dice, Modify Defense Dice (p.5)" tabindex="0">
               order to resolves their abilities:
               <ul>
                 <li>1º attacking player</strong>;
                 <li>2º defending player</strong>;
               </ul>
             </li>
-            <li title="ATTACK/Defense Dice pg.5">if <strong>range 0</strong>, enemy ships cannot reduce, cancel or modify your results;</li>
-            <li title="ATTACK/Defense Dice pg.5">each die can only be rerolled <strong>once</strong>;
+            <li title="ATTACK, Defense Dice (p.5)" tabindex="0">if range <strong>0</strong>, enemy ships cannot reduce, cancel or modify your results;</li>
+            <li title="ATTACK, Defense Dice (p.5)" tabindex="0">each die can only be rerolled <strong>once</strong>;
           </ul>
         </div>
       </li>
@@ -120,22 +104,22 @@
   </li>
 
   <li>
-    Neutralize Results
+    <strong>Neutralize Results</strong>
     <br>
     <div class="note">
       <ul>
-        <li title="ATTACK/Neutralize Results pg.5">
+        <li title="ATTACK, Neutralize Results (p.5)" tabindex="0">
           results are canceled if:
           <ul>
-            <li>pairs of <%- xw_symbol('evade') %> and <%- xw_symbol('crit') %>;</li>
             <li>pairs of <%- xw_symbol('evade') %> and <%- xw_symbol('hit') %>;</li>
+            <li>pairs of <%- xw_symbol('evade') %> and <%- xw_symbol('crit') %>;</li>
           </ul>
         </li>
       </ul>
     </div>
   </li>
 
-  <li>Deal Damage</li>
+  <li><strong>Deal Damage</strong></li>
 
-  <li>Aftermath</li>
+  <li><strong>Aftermath</strong></li>
 </ol>
