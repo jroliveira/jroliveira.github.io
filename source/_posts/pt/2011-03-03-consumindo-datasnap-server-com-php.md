@@ -14,11 +14,11 @@ tags:
 lang: pt
 ---
 
-Ol&#225; pessoal, estava estudando **DataSnap** com **Delphi XE**, e agora resolvi postar para voc&#234;s o resultado deste estudo. O primeiro post ser&#225; sobre consumir um m&#233;todo em um servidor DataSnap a partir de um cliente em **PHP**.
+Olá pessoal, estava estudando **DataSnap** com **Delphi XE**, e agora resolvi postar para vocês o resultado deste estudo. O primeiro post será sobre consumir um método em um servidor DataSnap a partir de um cliente em **PHP**.
 
 <!--more-->
 
-Segue o c&#243;digo da nossa p&#225;gina principal "**index.htm**". O c&#243;digo &#233; bem simples apenas para mostrar a integra&#231;&#227;o do **PHP** com o **DataSnap Server**, a &#250;nica observa&#231;&#227;o &#233; que estou utilizando o framework **jQuery** para JavaScript apenas para deixar o exemplo mais interessante. Segue o link para download <a href="http://jqueryui.com/download" target="_blank" rel="external noopener">jqueryui.com</a>.
+Segue o código da nossa página principal "**index.htm**". O código é bem simples apenas para mostrar a integração do **PHP** com o **DataSnap Server**, a única observação é que estou utilizando o framework **jQuery** para JavaScript apenas para deixar o exemplo mais interessante. Segue o link para download <a href="http://jqueryui.com/download" target="_blank" rel="external noopener">jqueryui.com</a>.
 
 {% codeblock index.htm lang:html line_number:true highlight:true %}
 <html>
@@ -47,7 +47,7 @@ Segue o c&#243;digo da nossa p&#225;gina principal "**index.htm**". O c&#243;dig
 </html>
 {% endcodeblock %}
 
-Abaixo o c&#243;digo do arquivo "**style.css**".
+Abaixo o código do arquivo "**style.css**".
 
 {% codeblock style.css lang:css line_number:true highlight:true %}
 body {
@@ -142,7 +142,7 @@ function showMessage(message) {
 }
 {% endcodeblock %}
 
-E por fim o c&#243;digo da nossa p&#225;gina "**index.source.php**" que ir&#225; processar os dados.
+E por fim o código da nossa página "**index.source.php**" que irá processar os dados.
 
 {% codeblock index.source.php lang:php line_number:true highlight:true %}
 <?php
@@ -204,15 +204,15 @@ E por fim o c&#243;digo da nossa p&#225;gina "**index.source.php**" que ir&#225;
 ?>
 {% endcodeblock %}
 
-Abaixo uma imagem de como dever&#225; ser criada a estrutura de pastas dos arquivos citados acima.
+Abaixo uma imagem de como deverá ser criada a estrutura de pastas dos arquivos citados acima.
 
 ![auto][structure]
 
-E agora uma imagem de como ficar&#225; o exemplo.
+E agora uma imagem de como ficará o exemplo.
 
 ![auto][sample]
 
-Bom pessoal espero que tenham gostado e que seja &#250;til de alguma forma. A id&#233;ia deste post foi mesmo apenas demonstrar como &#233; f&#225;cil consumir um m&#233;todo usando **PHP** em um servidor **DataSnap**.
+Bom pessoal espero que tenham gostado e que seja útil de alguma forma. A idéia deste post foi mesmo apenas demonstrar como é fácil consumir um método usando **PHP** em um servidor **DataSnap**.
 
 [structure]: http://junioro.files.wordpress.com/2011/02/estrutura-arquivos-datasnap-server-php.png "auto"
 [sample]: http://junioro.files.wordpress.com/2011/02/site-datasnap-server-php.png "auto"

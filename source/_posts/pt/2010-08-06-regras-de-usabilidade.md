@@ -10,34 +10,34 @@ tags:
 lang: pt
 ---
 
-Segue algumas regras de usabilidade para aplica&ccedil;&otilde;es web.
+Segue algumas regras de usabilidade para aplicações web.
 
 <!--more-->
 
-1&#186;. Clareza na arquitetura da informa&ccedil;&atilde;o:
+1º. Clareza na arquitetura da informação:
 
-*O usu&aacute;rio deve entender estrutura da aplica&ccedil;&atilde;o.*
+*O usuário deve entender estrutura da aplicação.*
 
-2&#186;. Facilidade de navega&ccedil;&atilde;o:
+2º. Facilidade de navegação:
 
-*O usu&aacute;rio deve acessar a p&aacute;gina desejada com no m&aacute;ximo tr&ecirc;s cliques.*
+*O usuário deve acessar a página desejada com no máximo três cliques.*
 
-3&#186;. Simplicidade:
+3º. Simplicidade:
 
-*P&aacute;ginas sem acumulo de informa&ccedil;&otilde;es.*
+*Páginas sem acumulo de informações.*
 
-4&#186;. Relev&acirc;ncia de conte&uacute;do:
+4º. Relevância de conteúdo:
 
-*O conte&uacute;do das p&aacute;ginas devem ser objetivos.*
+*O conteúdo das páginas devem ser objetivos.*
 
-5&#186;. Manter a consist&ecirc;ncia:
+5º. Manter a consistência:
 
-*Manter um padr&atilde;o entre cada p&aacute;gina, para que o usu&aacute;rio n&atilde;o se preocupe com o que ir&aacute; acontecer.*
+*Manter um padrão entre cada página, para que o usuário não se preocupe com o que irá acontecer.*
 
-6&#186;. Tempo suportav&eacute;l:
+6º. Tempo suportavél:
 
-*A resposta da p&aacute;gina requisitada deve ser r&aacute;pida, menos dez segundos.*
+*A resposta da página requisitada deve ser rápida, menos dez segundos.*
 
-7&#186;. Foco nos usu&aacute;rios:
+7º. Foco nos usuários:
 
-*A p&aacute;gina deve ser criada com foco na atividade do usu&aacute;rio.*
+*A página deve ser criada com foco na atividade do usuário.*

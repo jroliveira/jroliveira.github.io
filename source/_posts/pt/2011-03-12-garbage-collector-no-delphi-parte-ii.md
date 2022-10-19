@@ -11,15 +11,15 @@ tags:
 lang: pt
 ---
 
-Ol&#225; pessoal, continuando o post anterior de **Garbage Collector**, agora vou explorar o uso para objetos que herdam a classe **TObject**.
+Olá pessoal, continuando o post anterior de **Garbage Collector**, agora vou explorar o uso para objetos que herdam a classe **TObject**.
 
 <!--more-->
 
-Em uma thread na lista de discu&#231;&#227;o **<a href="http://br.groups.yahoo.com/group/lista-delphi/" target="_blank" rel="external noopener">lista-delphi</a>** o membro **Caique** vez uma coloca&#231;&#227;o perfeita do **Garbage Collector** no **Delphi** e como tinha prometido na thread vou compartilhar com voc&#234;s a explica&#231;&#227;o dele. Segue o link da **<a href="http://br.groups.yahoo.com/group/lista-delphi/message/143527" target="_blank" rel="external noopener">thread</a>**.
+Em uma thread na lista de discução **<a href="http://br.groups.yahoo.com/group/lista-delphi/" target="_blank" rel="external noopener">lista-delphi</a>** o membro **Caique** vez uma colocação perfeita do **Garbage Collector** no **Delphi** e como tinha prometido na thread vou compartilhar com vocês a explicação dele. Segue o link da **<a href="http://br.groups.yahoo.com/group/lista-delphi/message/143527" target="_blank" rel="external noopener">thread</a>**.
 
-> O **Delphi** "n&#227;o" tem **Garbage Collector**. Entende-se por **Garbage Collector** uma forma de destruir qualquer objeto fora de contexto como ocorre em plataformas gerenciadas. O que esta demonstrando no seu exemplo &#233; o uso de interfaces e estas sim por defini&#231;&#227;o destroem o objeto a qual est&#227;o associadas quando saem do contexto.
+> O **Delphi** "não" tem **Garbage Collector**. Entende-se por **Garbage Collector** uma forma de destruir qualquer objeto fora de contexto como ocorre em plataformas gerenciadas. O que esta demonstrando no seu exemplo é o uso de interfaces e estas sim por definição destroem o objeto a qual estão associadas quando saem do contexto.
 
-Primeiro desenvolvi uma classe que ser&#225; respons&#225;vel por coletar os objetos que n&#227;o est&#227;o mais sendo utilizados.
+Primeiro desenvolvi uma classe que será responsável por coletar os objetos que não estão mais sendo utilizados.
 
 {% codeblock TSafeGuard.pas lang:delphi line_number:true highlight:true %}
 unit GarbageCollector;
@@ -80,7 +80,7 @@ end;
 end.
 {% endcodeblock %}
 
-Depois criei um **Class Helper** para a classe **TObject** do **Delphi** com isto garantimos que todos os objetos que herdam a classe **TObject** ser&#227;o coletados pelo nosso **Garbage Collector**. Note que estou utilizando **Generics** para a nossa fun&#231;&#227;o **New()** j&#225; realizar o cast no objeto sem agente precisar se preocupar com isto.
+Depois criei um **Class Helper** para a classe **TObject** do **Delphi** com isto garantimos que todos os objetos que herdam a classe **TObject** serão coletados pelo nosso **Garbage Collector**. Note que estou utilizando **Generics** para a nossa função **New()** já realizar o cast no objeto sem agente precisar se preocupar com isto.
 
 {% codeblock THelperObject.pas lang:delphi line_number:true highlight:true %}
 unit HelperObject;
@@ -110,7 +110,7 @@ end;
 end.
 {% endcodeblock %}
 
-Agora a forma de utiliza&#231;&#227;o.
+Agora a forma de utilização.
 
 {% codeblock lang:delphi line_number:true highlight:true %}
 var
@@ -122,12 +122,12 @@ begin
 end;
 {% endcodeblock %}
 
-Para garantir que a mem&#243;ria est&#225; sendo liberada, utilize a mesma propriedade do post anterior **[Garbage Collector no Delphi - Parte I][post-i]**, neste post est&#225; explicado detalhadamento como deve ser utilizada.
+Para garantir que a memória está sendo liberada, utilize a mesma propriedade do post anterior **[Garbage Collector no Delphi - Parte I][post-i]**, neste post está explicado detalhadamento como deve ser utilizada.
 
 {% codeblock lang:delphi line_number:true highlight:true %}
 ReportMemoryLeaksOnShutdown := True;
 {% endcodeblock %}
 
-Este foi mais um exemplo em **Delphi XE**. Espero que tenham gostado e que seja &#250;til de alguma forma a voc&#234;s.
+Este foi mais um exemplo em **Delphi XE**. Espero que tenham gostado e que seja útil de alguma forma a vocês.
 
 [post-i]: /garbage-collector-no-delphi-parte-i/

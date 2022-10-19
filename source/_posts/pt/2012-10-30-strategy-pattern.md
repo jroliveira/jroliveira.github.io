@@ -13,19 +13,19 @@ tags:
 lang: pt
 ---
 
-Ol&#225; pessoal, vou falar um pouco sobre **Strategy Pattern**, &#233; um **Design Pattern** que ficou famoso depois de ser catalogado pelo **GoF (Gang Of Four)** formado por Erich Gamma, Richard Helm, Ralph Johnson e John Vlissides no livro *"Design Patterns: Elements of Reusable Object-Oriented Software"*.
+Olá pessoal, vou falar um pouco sobre **Strategy Pattern**, é um **Design Pattern** que ficou famoso depois de ser catalogado pelo **GoF (Gang Of Four)** formado por Erich Gamma, Richard Helm, Ralph Johnson e John Vlissides no livro *"Design Patterns: Elements of Reusable Object-Oriented Software"*.
 
 <!--more-->
 
-Segue abaixo a defini&#231;&#227;o de acordo com o livro:
+Segue abaixo a definição de acordo com o livro:
 
 > "Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from clients that use it."
 
-Vamos ao exemplo para ficar mais claro a defini&#231;&#227;o.
+Vamos ao exemplo para ficar mais claro a definição.
 
-Imagina que voc&#234; precisa desenvolver uma funcionalidade que ir&#225; validar um usu&#225;rio. Este &#233; um cen&#225;rio bem simples e t&#237;pico podemos fazer esta implementa&#231;&#227;o de v&#225;rias formas diferentes, abaixo segue um c&#243;digo que em um primeiro momento acho que seria o mais comum.
+Imagina que você precisa desenvolver uma funcionalidade que irá validar um usuário. Este é um cenário bem simples e típico podemos fazer esta implementação de várias formas diferentes, abaixo segue um código que em um primeiro momento acho que seria o mais comum.
 
-A primeira classe &#233; uma controller do **asp.net mvc** que ter&#225; uma action que ir&#225; receber o usu&#225;rio e a senha por **POST** e chamar a classe que ir&#225; validar estas informa&#231;&#245;es.
+A primeira classe é uma controller do **asp.net mvc** que terá uma action que irá receber o usuário e a senha por **POST** e chamar a classe que irá validar estas informações.
 
 {% codeblock LoginController.cs lang:csharp line_number:true highlight:true %}
 public class LoginController : Controller {
@@ -52,7 +52,7 @@ public class LoginController : Controller {
 }
 {% endcodeblock %}
 
-A classe abaixo ser&#225; respons&#225;vel por controlar o fluxo de valida&#231;&#227;o do usu&#225;rio.
+A classe abaixo será responsável por controlar o fluxo de validação do usuário.
 
 {% codeblock UserApplication.cs lang:csharp line_number:true highlight:true %}
 public class UserApplication {
@@ -67,7 +67,7 @@ public class UserApplication {
 }
 {% endcodeblock %}
 
-Nossa classe que ser&#225; respons&#225;vel por manipular os dados do usu&#225;rio.
+Nossa classe que será responsável por manipular os dados do usuário.
 
 {% codeblock UserDAO.cs lang:csharp line_number:true highlight:true %}
 public class UserDAO {
@@ -78,9 +78,9 @@ public class UserDAO {
 }
 {% endcodeblock %}
 
-Como mencionado acima, este &#233; um c&#243;digo bem simples, por&#233;m, este c&#243;digo &#233; imposs&#237;vel testar unitariamente e caso haja a necessidade de alterar a fonte dos dados tamb&#233;m ser&#225; dif&#237;cil.
+Como mencionado acima, este é um código bem simples, porém, este código é impossível testar unitariamente e caso haja a necessidade de alterar a fonte dos dados também será difícil.
 
-Para resolver este problema, podemos aplicar o **Strategy Pattern**, de forma que iremos passar para a classe **UserApplication** a "estrat&#233;gia" (classe) de acesso a dados que iremos utilizar, assim fica f&#225;cil testar a classe **UserApplication** unitariamente e de mudar a fonte de dados quando necess&#225;rio.
+Para resolver este problema, podemos aplicar o **Strategy Pattern**, de forma que iremos passar para a classe **UserApplication** a "estratégia" (classe) de acesso a dados que iremos utilizar, assim fica fácil testar a classe **UserApplication** unitariamente e de mudar a fonte de dados quando necessário.
 
 {% codeblock UserApplication.cs lang:csharp line_number:true highlight:true %}
 public class UserApplication {
@@ -100,9 +100,9 @@ public class UserApplication {
 }
 {% endcodeblock %}
 
-Notem que agora eu passo a depend&#234;ncia do reposit&#243;rio no construtor da minha classe **UserApplication**, sendo assim eu consigo passar qualquer classe que implemente a classe **IUserDAO**.
+Notem que agora eu passo a dependência do repositório no construtor da minha classe **UserApplication**, sendo assim eu consigo passar qualquer classe que implemente a classe **IUserDAO**.
 
-Abaixo notem que a nossa classe **UserDAO** sofreu uma modifica&#231;&#227;o, agora ela implementa a interface **IUserDAO** sendo assim eu posso passar ela no construtor da nossa classe **UserApplication**.
+Abaixo notem que a nossa classe **UserDAO** sofreu uma modificação, agora ela implementa a interface **IUserDAO** sendo assim eu posso passar ela no construtor da nossa classe **UserApplication**.
 
 {% codeblock UserDAO.cs lang:csharp line_number:true highlight:true %}
 public interface IUserDAO {
@@ -118,7 +118,7 @@ public class UserDAO : IUserDAO {
 }
 {% endcodeblock %}
 
-Voc&#234;s podem perceber que agora estou passando para a classe **UserApplication** a conex&#227;o que ela dever&#225; utilizar. Esta classe de conex&#227;o &#233; uma "estrat&#233;gia" que estou utilizando para acessar as informa&#231;&#245;es do usu&#225;rio, caso haja necessidade de acessar as informa&#231;&#245;es de outra fonte de dados &#233; necess&#225;rio apenas implementar outra "estrat&#233;gia" (classe) que implemente a interface **IUserDAO** e passar para a nossa classe **UserApplication** como mencionado acima.
+Vocês podem perceber que agora estou passando para a classe **UserApplication** a conexão que ela deverá utilizar. Esta classe de conexão é uma "estratégia" que estou utilizando para acessar as informações do usuário, caso haja necessidade de acessar as informações de outra fonte de dados é necessário apenas implementar outra "estratégia" (classe) que implemente a interface **IUserDAO** e passar para a nossa classe **UserApplication** como mencionado acima.
 
 {% codeblock LoginController.cs lang:csharp line_number:true highlight:true %}
 public class LoginController : Controller {
@@ -147,7 +147,7 @@ public class LoginController : Controller {
 }
 {% endcodeblock %}
 
-Abaixo outra "estrat&#233;gia" (classe) de acesso a dados que ir&#225; conter os m&#233;todos que simular&#225; as opera&#231;&#245;es na base de dados, nos ajudando assim a testar a classe **UserApplication**.
+Abaixo outra "estratégia" (classe) de acesso a dados que irá conter os métodos que simulará as operações na base de dados, nos ajudando assim a testar a classe **UserApplication**.
 
 {% codeblock FakeUserDAO.cs lang:csharp line_number:true highlight:true %}
 public class FakeUserDAO : IUserDAO {
@@ -160,7 +160,7 @@ public class FakeUserDAO : IUserDAO {
 }
 {% endcodeblock %}
 
-O teste abaixo &#233; para garantir que as opera&#231;&#245;es da classe **UserApplication** est&#227;o de acordo com as regras do neg&#243;cio.
+O teste abaixo é para garantir que as operações da classe **UserApplication** estão de acordo com as regras do negócio.
 
 {% codeblock UserApplicationTest.cs lang:csharp line_number:true highlight:true %}
 [TestFixture]
@@ -206,16 +206,16 @@ public class UserApplicationTest {
 }
 {% endcodeblock %}
 
-Analisando a defini&#231;&#227;o do pattern, descrita no inicio do post:
+Analisando a definição do pattern, descrita no inicio do post:
 
-O contexto &#233; a classe **UserApplication**.
+O contexto é a classe **UserApplication**.
 
-As estrat&#233;gias criadas foram as classes que implementam a interface **IUserDAO** no caso a classe **UserDAO** e **FakeUserDAO**.
+As estratégias criadas foram as classes que implementam a interface **IUserDAO** no caso a classe **UserDAO** e **FakeUserDAO**.
 
-E os clientes que utilizam a classe **UserApplication** s&#227;o os testes da classe **UserApplication** e a action da **LoginController**.
+E os clientes que utilizam a classe **UserApplication** são os testes da classe **UserApplication** e a action da **LoginController**.
 
 Neste post usei os seguintes pacotes: <a href="http://sharptestex.codeplex.com" target="_blank" rel="external noopener">Sharp Tests Ex</a> e <a href="http://www.nunit.org" target="_blank" rel="external noopener">NUnit</a>.
 
-Existem outras aplica&#231;&#245;es mais comuns para o **Strategy Pattern** como: criptografias, logs entre outros cen&#225;rios, escolhi este cen&#225;rio tamb&#233;m para demonstrar a aplica&#231;&#227;o de testes unit&#225;rios em c&#243;digos "legados".
+Existem outras aplicações mais comuns para o **Strategy Pattern** como: criptografias, logs entre outros cenários, escolhi este cenário também para demonstrar a aplicação de testes unitários em códigos "legados".
 
-Espero que tenham gostado do exemplo e at&#233; a pr&#243;xima.
+Espero que tenham gostado do exemplo e até a próxima.

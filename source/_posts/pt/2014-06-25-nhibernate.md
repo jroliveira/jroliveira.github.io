@@ -12,14 +12,14 @@ tags:
 lang: pt
 ---
 
-Ol&#225; pessoal, depois de um tempo parado, vamos falar um pouco de **NHibernate**.
-Este post estava pronto a bastante tempo pode ser que alguma coisa n&#227;o seja mais aplicado nas novas vers&#227;o do NHibernate.
+Olá pessoal, depois de um tempo parado, vamos falar um pouco de **NHibernate**.
+Este post estava pronto a bastante tempo pode ser que alguma coisa não seja mais aplicado nas novas versão do NHibernate.
 
 <!--more-->
 
 **Instalando**
 
-A forma mais simples de instalar o NHibernate &#233; usando o <a href="http://nuget.org/" target="_blank" rel="external noopener">NuGet</a>, abaixo o comando para instalar o NHibernate. No exemplo estou usando a vers&#227;o **3.3.3.4000** para o **.NET Framework 4.0**.
+A forma mais simples de instalar o NHibernate é usando o <a href="http://nuget.org/" target="_blank" rel="external noopener">NuGet</a>, abaixo o comando para instalar o NHibernate. No exemplo estou usando a versão **3.3.3.4000** para o **.NET Framework 4.0**.
 
 ```
 install-package NHibernate
@@ -27,9 +27,9 @@ install-package NHibernate
 
 **Configurando**
 
-Adicione um arquivo XML na solu&#231;&#227;o chamado **hibernate.cfg.xml**.
-Este arquivo ir&#225; conter as especifica&#231;&#245;es de conex&#227;o a base de dados e outras configura&#231;&#245;es da conex&#227;o.
-Abaixo segue uma configura&#231;&#227;o padr&#227;o para o banco **MySQL** e uma aplica&#231;&#227;o Web:
+Adicione um arquivo XML na solução chamado **hibernate.cfg.xml**.
+Este arquivo irá conter as especificações de conexão a base de dados e outras configurações da conexão.
+Abaixo segue uma configuração padrão para o banco **MySQL** e uma aplicação Web:
 
 {% codeblock hibernate.cfg.xml lang:xml line_number:true highlight:true %}
 <?xml version='1.0' encoding='utf-8'?>
@@ -55,9 +55,9 @@ Abaixo segue uma configura&#231;&#227;o padr&#227;o para o banco **MySQL** e uma
 
 Link com a lista de <a href="http://nhforge.org/doc/nh/en/#configuration-optional" target="_blank" rel="external noopener">propriedades de configuração</a> do NHibernate.
 
-**Dom&#237;nio**
+**Domínio**
 
-O dom&#237;nio abaixo &#233; uma representa&#231;&#227;o de uma conta de jogador, retirada do projeto <a href="https://github.com/junioro/dolrath" target="_blank" rel="external noopener">Dolrath</a> e adaptada para ficar mais did&#225;tica.
+O domínio abaixo é uma representação de uma conta de jogador, retirada do projeto <a href="https://github.com/junioro/dolrath" target="_blank" rel="external noopener">Dolrath</a> e adaptada para ficar mais didática.
 
 {% codeblock Account.cs lang:csharp line_number:true highlight:true %}
 public class Account : Entity<int> {
@@ -80,13 +80,13 @@ public class Account : Entity<int> {
 }
 {% endcodeblock %}
 
-Alguns pontos importantes ao notar o dom&#237;nio &#233; a presen&#231;a do modificador **virtual** nos m&#233;todos e propriedades, este modificador possibilita o NHibernate criar um proxy sobre a nossa classe e que n&#227;o existe nenhuma presen&#231;a de infraestrutura de acesso a dados.
+Alguns pontos importantes ao notar o domínio é a presença do modificador **virtual** nos métodos e propriedades, este modificador possibilita o NHibernate criar um proxy sobre a nossa classe e que não existe nenhuma presença de infraestrutura de acesso a dados.
 
 **Mapeamento**
 
-O mapeamento abaixo esta escrito em XML, existem outras formas de mapeamento como por exemplo atributos ou por c&#243;digo usando <a href="http://www.fluentnhibernate.org/" target="_blank" rel="external noopener">NHibernate Fluent</a>. Uma vantagens que eu vejo ao usar XML &#233; que voc&#234; n&#227;o precisa recompilar a aplica&#231;&#227;o para alterar alguma regra no mapeamento e a forma de utiliza&#231;&#227;o ao meu ver &#233; mais simples e did&#225;tica.
+O mapeamento abaixo esta escrito em XML, existem outras formas de mapeamento como por exemplo atributos ou por código usando <a href="http://www.fluentnhibernate.org/" target="_blank" rel="external noopener">NHibernate Fluent</a>. Uma vantagens que eu vejo ao usar XML é que você não precisa recompilar a aplicação para alterar alguma regra no mapeamento e a forma de utilização ao meu ver é mais simples e didática.
 
-Abaixo esta o mapeamento da nossa classe de dom&#237;nio acima.
+Abaixo esta o mapeamento da nossa classe de domínio acima.
 
 {% codeblock lang:xml line_number:true highlight:true %}
 <?xml version="1.0" encoding="utf-8" ?>
@@ -108,7 +108,7 @@ Abaixo esta o mapeamento da nossa classe de dom&#237;nio acima.
 </hibernate-mapping>
 {% endcodeblock %}
 
-Uma das configura&#231;&#245;es mais importantes deste mapeamento &#233; o gerador da chave prim&#225;ria, neste exemplo estou usando **hilo**, ele &#233; usado para gerar a chave sem precisar ir at&#233; a base de dados n&#227;o quebramos a <a href="http://martinfowler.com/eaaCatalog/unitOfWork.html" target="_blank" rel="external noopener">Unit Of Work</a>.
+Uma das configurações mais importantes deste mapeamento é o gerador da chave primária, neste exemplo estou usando **hilo**, ele é usado para gerar a chave sem precisar ir até a base de dados não quebramos a <a href="http://martinfowler.com/eaaCatalog/unitOfWork.html" target="_blank" rel="external noopener">Unit Of Work</a>.
 
 Click no elemento abaixo para maiores detalhes de seus atributos.
 
@@ -117,11 +117,11 @@ Click no elemento abaixo para maiores detalhes de seus atributos.
 <a href="http://nhforge.org/doc/nh/en/#mapping-declaration-id" target="_blank" rel="external noopener">id</a>
 <a href="http://nhforge.org/doc/nh/en/#mapping-declaration-property" target="_blank" rel="external noopener">property</a>
 
-**Rela&#231;&#245;es**
+**Relações**
 
-Abaixo as duas formas de fazer uma rela&#231;&#227;o de **N para N** (<a href="http://nhforge.org/doc/nh/en/#collections-ofvalues" target="_blank" rel="external noopener">many-to-many</a>).
+Abaixo as duas formas de fazer uma relação de **N para N** (<a href="http://nhforge.org/doc/nh/en/#collections-ofvalues" target="_blank" rel="external noopener">many-to-many</a>).
 
-**bag**: &#201; usado quando temos uma situa&#231;&#227;o onde a cole&#231;&#227;o pode haver valores duplicados.
+**bag**: É usado quando temos uma situação onde a coleção pode haver valores duplicados.
 
 {% codeblock lang:xml line_number:true highlight:true %}
 <class name="Order" table="tbOrder">
@@ -137,7 +137,7 @@ Abaixo as duas formas de fazer uma rela&#231;&#227;o de **N para N** (<a href="h
 </class>
 {% endcodeblock %}
 
-**set**: &#201; usado quando temos uma situa&#231;&#227;o onde a cole&#231;&#227;o n&#227;o pode haver valores duplicados.
+**set**: É usado quando temos uma situação onde a coleção não pode haver valores duplicados.
 
 {% codeblock lang:xml line_number:true highlight:true %}
 <class name="Character" table="Characters">
@@ -153,7 +153,7 @@ Abaixo as duas formas de fazer uma rela&#231;&#227;o de **N para N** (<a href="h
 </class>
 {% endcodeblock %}
 
-Rela&#231;&#227;o de **N para 1** (<a href="http://nhforge.org/doc/nh/en/#mapping-declaration-manytoone" target="_blank" rel="external noopener">many-to-one</a>).
+Relação de **N para 1** (<a href="http://nhforge.org/doc/nh/en/#mapping-declaration-manytoone" target="_blank" rel="external noopener">many-to-one</a>).
 
 {% codeblock lang:xml line_number:true highlight:true %}
 <class name="Character" table="Characters">
@@ -165,7 +165,7 @@ Rela&#231;&#227;o de **N para 1** (<a href="http://nhforge.org/doc/nh/en/#mappin
 </class>
 {% endcodeblock %}
 
-Rela&#231;&#227;o de **1 para 1** (<a href="http://nhforge.org/doc/nh/en/#mapping-declaration-onetoone" target="_blank" rel="external noopener">one-to-one</a>).
+Relação de **1 para 1** (<a href="http://nhforge.org/doc/nh/en/#mapping-declaration-onetoone" target="_blank" rel="external noopener">one-to-one</a>).
 
 {% codeblock lang:xml line_number:true highlight:true %}
 <class name="Account" table="Accounts">
@@ -177,7 +177,7 @@ Rela&#231;&#227;o de **1 para 1** (<a href="http://nhforge.org/doc/nh/en/#mappin
 </class>
 {% endcodeblock %}
 
-**Outras configura&#231;&#245;es**
+**Outras configurações**
 
 <a href="http://nhforge.org/doc/nh/en/#mapping-declaration-discriminator" target="_blank" rel="external noopener">Discriminator</a>
 
@@ -199,9 +199,9 @@ Rela&#231;&#227;o de **1 para 1** (<a href="http://nhforge.org/doc/nh/en/#mappin
 
 **Session Factory**
 
-A **Session Factory** &#233; respons&#225;vel por construir as sess&#245;es.
-Quando uma aplica&#231;&#227;o &#233; iniciada deve-se carregar todas as configura&#231;&#245;es do NHibernate e mapeamentos para criar a Session Factory, a cria&#231;&#227;o da Session Factory &#233; um processo demorado e deve ser feito apenas uma vez na aplica&#231;&#227;o.
-O c&#243;digo abaixo &#233; uma implementa&#231;&#227;o do padr&#227;o <a href="http://www.dofactory.com/Patterns/PatternSingleton.aspx" target="_blank" rel="external noopener">Singleton</a> e garante que a Session Factory ser&#225; criada apenas uma vez na aplica&#231;&#227;o.
+A **Session Factory** é responsável por construir as sessões.
+Quando uma aplicação é iniciada deve-se carregar todas as configurações do NHibernate e mapeamentos para criar a Session Factory, a criação da Session Factory é um processo demorado e deve ser feito apenas uma vez na aplicação.
+O código abaixo é uma implementação do padrão <a href="http://www.dofactory.com/Patterns/PatternSingleton.aspx" target="_blank" rel="external noopener">Singleton</a> e garante que a Session Factory será criada apenas uma vez na aplicação.
 
 {% codeblock SessionFactoryFactory.cs lang:csharp line_number:true highlight:true %}
 public sealed class SessionFactoryFactory {
@@ -237,16 +237,16 @@ public sealed class SessionFactoryFactory {
 
 **Action Filter - Transaction Per Request**
 
-Exitem v&#225;rias formas de criar uma **session** em uma aplica&#231;&#227;o web a forma que irei adotar &#233; bem comum, ela cria uma session por cada requisi&#231;&#227;o feita.
+Exitem várias formas de criar uma **session** em uma aplicação web a forma que irei adotar é bem comum, ela cria uma session por cada requisição feita.
 
-Simplesmente vamos criar um **action filter** que ir&#225; interceptar a "entrada" e a "sa&#237;da" da nossa **action** da **controller**.
+Simplesmente vamos criar um **action filter** que irá interceptar a "entrada" e a "saída" da nossa **action** da **controller**.
 
-Na entrada vamos pegar a session usando o **cont&#234;iner de depend&#234;ncia** e iniciar uma transa&#231;&#227;o setando o **n&#237;vel de isolamento** da mesma.
+Na entrada vamos pegar a session usando o **contêiner de dependência** e iniciar uma transação setando o **nível de isolamento** da mesma.
 Lista dos <a href="http://msdn.microsoft.com/pt-br/library/system.data.isolationlevel.aspx" target="_blank" rel="external noopener">níveis de isolamentos</a>.
 
-Na sa&#237;da vamos verificar se houve um erro na requisi&#231;&#227;o. Caso n&#227;o houve um erro a transa&#231;&#227;o ser&#225; feito um **commit** da transa&#231;&#227;o, sen&#227;o ser&#225; feito um **rollback** na mesma.
+Na saída vamos verificar se houve um erro na requisição. Caso não houve um erro a transação será feito um **commit** da transação, senão será feito um **rollback** na mesma.
 
-No final a Session ser&#225; destru&#237;da.
+No final a Session será destruída.
 
 {% codeblock TransactionPerRequestAttribute.cs lang:csharp line_number:true highlight:true %}
 [AttributeUsage(AttributeTargets.Method, AllowMultiple = false)]
@@ -276,7 +276,7 @@ public class TransactionPerRequestAttribute : ActionFilterAttribute {
 
 **Action Filter - NHibernate Session**
 
-Este **actino filter** ser&#225; utilizado para poder acoplar e desacoplar a session do NHibernate no contexto atual, para ficar mais simples a utiliza&#231;&#227;o vamos registrar ele no **global filter** assim n&#227;o precisamos decorar a nossa action com esta anota&#231;&#227;o.
+Este **actino filter** será utilizado para poder acoplar e desacoplar a session do NHibernate no contexto atual, para ficar mais simples a utilização vamos registrar ele no **global filter** assim não precisamos decorar a nossa action com esta anotação.
 
 {% codeblock FilterConfig.cs lang:csharp line_number:true highlight:true %}
 public class FilterConfig {
@@ -307,8 +307,8 @@ public class NHibernateSessionAttribute : ActionFilterAttribute {
 
 **Controller**
 
-Notem que estou recebendo a session no construtor da controller, quem ir&#225; fornecer esta session ser&#225; o cont&#234;iner de depend&#234;ncia.
-A **action create** do m&#233;todo **post** esta decorada com a anota&#231;&#227;o **TransactionPerRequest**, isto indica que esta action ter&#225; um controle de transa&#231;&#227;o.
+Notem que estou recebendo a session no construtor da controller, quem irá fornecer esta session será o contêiner de dependência.
+A **action create** do método **post** esta decorada com a anotação **TransactionPerRequest**, isto indica que esta action terá um controle de transação.
 
 {% codeblock AccountController.cs lang:csharp line_number:true highlight:true %}
 public class AccountController : BaseController {
@@ -337,7 +337,7 @@ public class AccountController : BaseController {
 }
 {% endcodeblock %}
 
-Existem v&#225;rias formas de buscar dados usando NHibernate segue alguns abaixo:
+Existem várias formas de buscar dados usando NHibernate segue alguns abaixo:
 
 <a href="http://nhforge.org/doc/nh/en/#querycriteria" target="_blank" rel="external noopener">Criteria Queries</a>
 
@@ -400,4 +400,4 @@ public class ItemResultGetAllQuery : IQuery<IEnumerable<ItemResult>> {
 }
 {% endcodeblock %}
 
-Obrigado pela visita e espero que tenha gostado, at&#233; a pr&#243;xima.
+Obrigado pela visita e espero que tenha gostado, até a próxima.
