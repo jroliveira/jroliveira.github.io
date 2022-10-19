@@ -18,12 +18,12 @@ Olá, neste artigo eu vou escrever sobre a novidade do [C# 8 default interface m
 
 ##### Index:
 
- - [Antes do C# 8](/pt/csharp-8-default-interface-methods/#Antes-do-C-8-uarr);
- - [Antes do C# 8 (uma opção com interface extensions)](/pt/csharp-8-default-interface-methods/#Antes-do-C-8-uma-opcao-com-interface-extensions-uarr);
- - [Depois do C# 8](/pt/csharp-8-default-interface-methods/#Depois-do-C-8-uarr);
- - [Considerações finais](/pt/csharp-8-default-interface-methods/#Consideracoes-finais-uarr)
+ - [Antes do C# 8](/pt/csharp-8-default-interface-methods/#Antes-do-C-8-↑);
+ - [Antes do C# 8 (uma opção com interface extensions)](/pt/csharp-8-default-interface-methods/#Antes-do-C-8-uma-opcao-com-interface-extensions-↑);
+ - [Depois do C# 8](/pt/csharp-8-default-interface-methods/#Depois-do-C-8-↑);
+ - [Considerações finais](/pt/csharp-8-default-interface-methods/#Consideracoes-finais-↑)
 
-##### Antes do C# 8 [&uarr;](#Index)
+##### Antes do C# 8 [↑](#Index)
 
 {% codeblock lang:csharp line_number:true highlight:true %}
 public interface ILimit
@@ -88,7 +88,7 @@ public sealed class FilterBuilder : IFilterBuilder
 }
 {% endcodeblock %}
 
-##### Antes do C# 8 (uma opção com interface extensions)  [&uarr;](#Index)
+##### Antes do C# 8 (uma opção com interface extensions)  [↑](#Index)
 
 Este exemplo foi inspirado no artigo [Pseudo Traits in C#](https://dev.to/htissink/pseudo-traits-in-c-lnp), que traz uma abordagem de como podemos fazer praticamente a mesma coisa sem precisar desta nova funcionalidade.
 
@@ -171,7 +171,7 @@ public sealed class FilterBuilder : IFilterBuilder
 }
 {% endcodeblock %}
 
-##### Depois do C# 8 [&uarr;](#Index)
+##### Depois do C# 8 [↑](#Index)
 
 {% codeblock lang:csharp line_number:true highlight:true %}
 public interface IFilterBase
@@ -240,7 +240,7 @@ public sealed class FilterBuilder : IFilterBuilder
 }
 {% endcodeblock %}
 
-##### Considerações finais [&uarr;](#Index)
+##### Considerações finais [↑](#Index)
 
 Esta nova funcionalidade dividiu um pouco a opinião da comunidade, alguns gostaram e outros nem tanto, abaixo dois artigos que ilustram bem essas opiniões:
 

@@ -13,11 +13,11 @@ tags:
 lang: pt
 ---
 
-Ol&#225; pessoal, mais um post sobre **DataSnap** com **Delphi XE**, agora eu vou demonstrar como consumir um m&#233;todo em um servidor DataSnap a partir de um cliente em **C#**.
+Olá pessoal, mais um post sobre **DataSnap** com **Delphi XE**, agora eu vou demonstrar como consumir um método em um servidor DataSnap a partir de um cliente em **C#**.
 
 <!--more-->
 
-Segue o c&#243;digo do nosso m&#233;todo respons&#225;vel por fazer a requisi&#231;&#227;o no servidor.
+Segue o código do nosso método responsável por fazer a requisição no servidor.
 
 {% codeblock lang:csharp line_number:true highlight:true %}
 private static string HttpGet(string url)
@@ -42,7 +42,7 @@ private static string HttpGet(string url)
 }
 {% endcodeblock %}
 
-M&#233;todo respons&#225;vel por fazer a valida&#231;&#227;o dos dados antes de realizar a solicita&#231;&#227;o no servidor.
+Método responsável por fazer a validação dos dados antes de realizar a solicitação no servidor.
 
 {% codeblock lang:csharp line_number:true highlight:true %}
 private bool Validacao()
@@ -58,7 +58,7 @@ private bool Validacao()
 }
 {% endcodeblock %}
 
-M&#233;todo principal da aplica&#231;&#227;o. Note que estou utilizando uma classe chamada **JObject** para fazer a convers&#227;o dos dados de retorno do servidor para um objeto em JSON, est&#225; classe est&#225; contida na Class Library **Newtonsoft.Json.dll** para trabalhar com dados em JSON. Segue o link do projeto para download <a href="http://james.newtonking.com/projects/json-net.aspx" target="_blank" rel="external noopener">Json.NET</a>. Estou utilizando est&#225; classe pois achei bem simples a forma de utiliza&#231;&#227;o.
+Método principal da aplicação. Note que estou utilizando uma classe chamada **JObject** para fazer a conversão dos dados de retorno do servidor para um objeto em JSON, está classe está contida na Class Library **Newtonsoft.Json.dll** para trabalhar com dados em JSON. Segue o link do projeto para download <a href="http://james.newtonking.com/projects/json-net.aspx" target="_blank" rel="external noopener">Json.NET</a>. Estou utilizando está classe pois achei bem simples a forma de utilização.
 
 {% codeblock lang:csharp line_number:true highlight:true %}
 private void BtnValidar_Click(object sender, EventArgs e)
@@ -107,4 +107,4 @@ private void BtnValidar_Click(object sender, EventArgs e)
 }
 {% endcodeblock %}
 
-Este foi mais um post de integra&#231;&#227;o usando **DataSnap** espero que tenham gostado.
+Este foi mais um post de integração usando **DataSnap** espero que tenham gostado.

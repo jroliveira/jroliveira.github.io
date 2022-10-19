@@ -11,13 +11,13 @@ tags:
 lang: pt
 ---
 
-RTTI (Run-Time Type Information) &#233; uma t&#233;cnica utilizada para identificar tipo de objetos armazenados em mem&#243;ria em tempo de execu&#231;&#227;o.
+RTTI (Run-Time Type Information) é uma técnica utilizada para identificar tipo de objetos armazenados em memória em tempo de execução.
 
 <!--more-->
 
-Abaixo um exemplo de como utilizar RTTI em sua aplica&#231;&#227;o, este exemplo &#233; apenas uma id&#233;ia de como usar RTTI para criar classes e m&#233;todos gen&#234;ricos de acesso a base de dados.
+Abaixo um exemplo de como utilizar RTTI em sua aplicação, este exemplo é apenas uma idéia de como usar RTTI para criar classes e métodos genêricos de acesso a base de dados.
 
-O primeiro c&#243;digo &#233; de uma classe gen&#234;rica de modelo da estrutura da tabela no banco de dados. Note que a mesma herda da classe TPersistent pois nela existe as directivas de compila&#231;&#227;o **{$M+}** (**{$METHODINFO ON}**) e **{$M-}** (**{$METHODINFO OFF}**) necess&#225;rias para implementar o acesso dos dados em mem&#243;ria.
+O primeiro código é de uma classe genêrica de modelo da estrutura da tabela no banco de dados. Note que a mesma herda da classe TPersistent pois nela existe as directivas de compilação **{$M+}** (**{$METHODINFO ON}**) e **{$M-}** (**{$METHODINFO OFF}**) necessárias para implementar o acesso dos dados em memória.
 
 {% codeblock TModel.pas lang:delphi line_number:true highlight:true %}
 type
@@ -33,7 +33,7 @@ type
   end;
 {% endcodeblock %}
 
-O segundo c&#243;digo &#233; de uma classe de modelo da estrutura da tabela Pessoa do banco de dados, note que ela herda a classe **TModel** e que suas propridades est&#227;o declaradas na sess&#227;o **published** pois assim &#233; poss&#237;vel acessa-l&#225;s em tempo de execu&#231;&#227;o.
+O segundo código é de uma classe de modelo da estrutura da tabela Pessoa do banco de dados, note que ela herda a classe **TModel** e que suas propridades estão declaradas na sessão **published** pois assim é possível acessa-lás em tempo de execução.
 
 {% codeblock TModelPessoa.pas lang:delphi line_number:true highlight:true %}
 type
@@ -56,7 +56,7 @@ type
   end;
 {% endcodeblock %}
 
-O terceiro c&#243;digo &#233; de uma classe teria os m&#233;todos de opera&#231;&#227;o na base de dados por&#233;m eu retirei pois este n&#227;o &#233; o foco deste post e sim apenas mostrar uma utiliza&#231;&#227;o do RTTI. Ent&#227;o vamos a explica&#231;&#227;o, o m&#233;todo **fillProperty** &#233; respons&#225;vel por verificar as propriedades do objeto do tipo ou que herde a classe **TModel** passado por par&#226;metro. Outro detalhe importante &#233; a declara&#231;&#227;o da unit **TypInfo** que cont&#233;m os m&#233;todos respons&#225;veis em acessar os dados em mem&#243;ria.
+O terceiro código é de uma classe teria os métodos de operação na base de dados porém eu retirei pois este não é o foco deste post e sim apenas mostrar uma utilização do RTTI. Então vamos a explicação, o método **fillProperty** é responsável por verificar as propriedades do objeto do tipo ou que herde a classe **TModel** passado por parâmetro. Outro detalhe importante é a declaração da unit **TypInfo** que contém os métodos responsáveis em acessar os dados em memória.
 
 {% codeblock TController.pas lang:delphi line_number:true highlight:true %}
 uses
@@ -76,7 +76,7 @@ type
   end;
 {% endcodeblock %}
 
-Como descrito anteriomente o m&#233;todo respons&#225;vel por acessar os dados em mem&#243;ria do objeto em tempo de execu&#231;&#227;o. Note que ap&#243;s o termino do **for** foi inserido um **ShowMessage(msg.Text);** para informar ao usu&#225;rio as propriedades e o valor das propriedades do objeto passado por par&#226;metro.
+Como descrito anteriomente o método responsável por acessar os dados em memória do objeto em tempo de execução. Note que após o termino do **for** foi inserido um **ShowMessage(msg.Text);** para informar ao usuário as propriedades e o valor das propriedades do objeto passado por parâmetro.
 
 {% codeblock TController.pas lang:delphi line_number:true highlight:true %}
 procedure TController.fillProperties(model: TModel);
@@ -112,7 +112,7 @@ begin
 end;
 {% endcodeblock %}
 
-E por fim um trecho de c&#243;digo para voc&#234; adicionar ao evento de um **button** por exemplo de como utilizar o m&#233;todo **fillProperties** da classe **TController**.
+E por fim um trecho de código para você adicionar ao evento de um **button** por exemplo de como utilizar o método **fillProperties** da classe **TController**.
 
 {% codeblock TController.pas lang:delphi line_number:true highlight:true %}
 var
@@ -133,6 +133,6 @@ begin
 end;
 {% endcodeblock %}
 
-Espero que gostem e seja &#250;til de alguma forma este exemplo. Em breve est&#225;rei postando uma aplica&#231;&#227;o mais real da utiliza&#231;&#227;o do RTTI para cria&#231;&#227;o de classes e m&#233;todos gen&#234;ricos de acesso a dados, lembrando que este n&#227;o &#233; a &#250;nica utiliza&#231;&#227;o do RTTI.
+Espero que gostem e seja útil de alguma forma este exemplo. Em breve estárei postando uma aplicação mais real da utilização do RTTI para criação de classes e métodos genêricos de acesso a dados, lembrando que este não é a única utilização do RTTI.
 
-Desde j&#225; agrede&#231;o a visita.
+Desde já agredeço a visita.
