@@ -6,7 +6,9 @@ categories:
 - game
 tags:
 - x-wing
-lang: pt
+lang: en
 ---
 
-[v1.4.3.1](v1_4_3_1)
+##### Rules
+
+ - [v1.4.3.1](v1_4_3_1)

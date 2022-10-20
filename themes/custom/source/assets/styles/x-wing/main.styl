@@ -8,18 +8,6 @@
 .x-wing__rules h5
   font-family Orbitron
 
-.x-wing__ref
-  background-image url(/assets/images/shared/link-external.svg)
-  background-position center right
-  background-repeat no-repeat
-  background-size 0.857em
-  font-size 1.2rem
-  padding-right 1.1em
-
-  & > img
-    width 16px
-    height 16px
-
 .x-wing__title
   small
     font-size 50%
@@ -98,21 +86,3 @@ i[class*="xf-token-"]
 
 .xf-token-force
   color #AD6CFE
-
-@media (pointer: coarse), (hover: none)
-  [title]
-    position relative
-
-  [title]:focus::after
-    background-color #fff
-    border 1px solid #f1f1f1
-    border-radius 2px
-    box-shadow 2px 2px 3px #ccc
-    color #000
-    content attr(title)
-    font-size 1rem
-    left 0
-    padding 0 5px
-    position absolute
-    top 90%
-    z-index 1
