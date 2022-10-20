@@ -9,7 +9,7 @@
     <atom:link href="https://jroliveira.net/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>Blog about code and stuff.</description>
-    <pubDate>Wed, 19 Oct 2022 17:32:00 GMT</pubDate>
+    <pubDate>Wed, 19 Oct 2022 17:49:28 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -224,11 +224,11 @@
       
       <category domain="https://jroliveira.net/tags/csharp/">csharp</category>
       
-      <category domain="https://jroliveira.net/tags/design-pattern/">design pattern</category>
-      
       <category domain="https://jroliveira.net/tags/di/">di</category>
       
       <category domain="https://jroliveira.net/tags/ioc/">ioc</category>
+      
+      <category domain="https://jroliveira.net/tags/design-pattern/">design pattern</category>
       
       
       <comments>https://jroliveira.net/pt/strategy-pattern/#disqus_thread</comments>
@@ -339,9 +339,9 @@
       
       <category domain="https://jroliveira.net/tags/json/">json</category>
       
-      <category domain="https://jroliveira.net/tags/csharp/">csharp</category>
-      
       <category domain="https://jroliveira.net/tags/datasnap/">datasnap</category>
+      
+      <category domain="https://jroliveira.net/tags/csharp/">csharp</category>
       
       
       <comments>https://jroliveira.net/pt/consumindo-datasnap-server-com-c-sharp/#disqus_thread</comments>
