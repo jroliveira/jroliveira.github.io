@@ -6,5 +6,5 @@ categories:
 - game
 tags:
 - x-wing
-lang: pt
+lang: en
 ---
