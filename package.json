@@ -45,13 +45,15 @@
     "hexo-renderer-marked": "^6.0.0",
     "hexo-renderer-stylus": "^2.1.0",
     "hexo-server": "^3.0.0",
-    "normalize-styl": "^8.0.1"
+    "jquery": "^3.6.1",
+    "md5": "^2.3.0",
+    "normalize-styl": "^8.0.1",
+    "xwing-miniatures-font": "^2.6.9"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
     "husky": "^8.0.1",
-    "md5": "^2.3.0",
     "standard-version": "^9.5.0"
   },
   "husky": {
