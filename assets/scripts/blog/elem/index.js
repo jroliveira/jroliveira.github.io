@@ -1,1 +1,0 @@
-blog.elem=function(){"use strict";class t{constructor(e){this.$elem=e}html(e){this.$elem.innerHTML=e}onChange(e){this.$elem.addEventListener("input",function(){e(this.value)})}}return{getByClass:e=>{e=document.getElementsByClassName(e);if(e&&1===e.length)return new t(e[0])}}}();
