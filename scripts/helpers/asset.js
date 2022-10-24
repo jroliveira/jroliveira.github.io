@@ -1,24 +1,19 @@
 'use strict';
 
-const path = require('path');
-
-hexo.extend.helper.register('asset', function (asset) {
-  let assetPath = asset;
-  const url_for = hexo.extend.helper.get('url_for').bind(hexo);
+hexo.extend.helper.register('asset', function (assetPath) {
+  const path = require('path');
 
   const hashedAssets = hexo.locals.get('hashedAssets');
-
   if (hashedAssets) {
-    let hashedAsset = hashedAssets.find(item => item.path === asset);
-
+    const hashedAsset = hashedAssets.find(a => a.original === assetPath);
     if (hashedAsset) {
-      assetPath = hashedAsset.hashedPath;
+      assetPath = hashedAsset.hashed;
     }
   }
 
   const ext = path.extname(assetPath);
 
-  return ext === '.js'
-    ? `<script type="text/javascript" src="${url_for(assetPath)}"></script>`
-    : `<link rel="stylesheet" href="${url_for(assetPath)}">`;
+  return ext === '.js' ?
+    `<script type="text/javascript" src="${assetPath}"></script>` :
+    `<link rel="stylesheet" href="${assetPath}" async />`;
 });
