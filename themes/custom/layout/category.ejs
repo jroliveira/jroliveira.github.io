@@ -1,0 +1,11 @@
+<h2 class="page__title">
+  <%= _p('post.about', page.category) %>
+</h2>
+
+<div class="page__content">
+  <% page.posts.groupByDate().forEach(post => { %>
+
+    <%- partial('post/_partial/resume', {post: post}) %>
+
+  <% }) %>
+</div>

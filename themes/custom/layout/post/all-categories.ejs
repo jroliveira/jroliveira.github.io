@@ -1,0 +1,41 @@
+<h2 class="page__title">
+  <%= __('category.all') %>
+</h2>
+
+<div class="page__content">
+  <section class="all-categories__index">
+    <h5 id="Index">
+      <%= __('page.index') %>
+    </h5>
+
+    <% site.categories.toPage(6).forEach(page => { %>
+
+      <div class="row center">
+        <% page.forEach(category => { %>
+
+          <div class="all-categories__item two columns">
+            <a href="/categories/#<%= to_kebab_case(category.name) %>"><%= category.name %></a>
+          </div>
+
+        <% }) %>
+      </div>
+
+    <% }) %>
+  </section>
+
+  <% site.categories.forEach(category => { %>
+
+    <section class="category-posts">
+      <h4 id="<%= to_kebab_case(category.name) %>">
+        <%= _p('post.about', category.name) %> <a href="#Index">↑</a>
+      </h4>
+
+      <% site.posts.filterByCategory(category).forEach(post => { %>
+
+        <%- partial('post/_partial/resume', {post: post})  %>
+
+      <% }) %>
+    </section>
+
+  <% }) %>
+</div>

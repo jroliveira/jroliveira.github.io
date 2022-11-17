@@ -1,5 +1,17 @@
 'use strict';
 
+Object.defineProperty(Object.prototype, 'filterByCategory', {
+  configurable: true,
+  enumerable: false,
+  writable: true,
+  value: function (category) {
+    return this
+      .filter(post => post.categories.map(item => item.name).includes(category.name))
+      .groupByDate()
+      .sortByDate();
+  },
+});
+
 Object.defineProperty(Object.prototype, 'filterByDate', {
   configurable: true,
   enumerable: false,

@@ -1,3 +1,6 @@
+category:
+  all: All categories
+
 page:
   index: Index
   no_results: Sorry, no results were found
