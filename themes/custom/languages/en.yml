@@ -1,3 +1,6 @@
+archive:
+  all: Archive
+
 category:
   all: All categories
 
