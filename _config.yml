@@ -116,3 +116,12 @@ all_minifier: true
 category_generator:
   per_page: 0
   order_by: -date
+
+# Archive
+archive_generator:
+  enabled: true
+  per_page: 0
+  yearly: true
+  monthly: true
+  daily: false
+  order_by: -date

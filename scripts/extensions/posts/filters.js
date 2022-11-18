@@ -46,6 +46,19 @@ Object.defineProperty(Object.prototype, 'filterByTag', {
   },
 });
 
+Object.defineProperty(Object.prototype, 'filterByYear', {
+  configurable: true,
+  enumerable: false,
+  writable: true,
+  value: function (year) {
+    return this
+      .filter(post => post.date.year() === year)
+      .withCategories(['dev'])
+      .groupByDate()
+      .sortByDate();
+  },
+});
+
 Object.defineProperty(Object.prototype, 'withCategories', {
   configurable: true,
   enumerable: false,
