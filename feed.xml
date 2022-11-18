@@ -222,11 +222,11 @@
       <category domain="https://jroliveira.net/categories/dev/">dev</category>
       
       
+      <category domain="https://jroliveira.net/tags/csharp/">csharp</category>
+      
       <category domain="https://jroliveira.net/tags/di/">di</category>
       
       <category domain="https://jroliveira.net/tags/ioc/">ioc</category>
-      
-      <category domain="https://jroliveira.net/tags/csharp/">csharp</category>
       
       <category domain="https://jroliveira.net/tags/design-pattern/">design pattern</category>
       
@@ -337,9 +337,9 @@
       
       <category domain="https://jroliveira.net/tags/delphi/">delphi</category>
       
-      <category domain="https://jroliveira.net/tags/json/">json</category>
-      
       <category domain="https://jroliveira.net/tags/datasnap/">datasnap</category>
+      
+      <category domain="https://jroliveira.net/tags/json/">json</category>
       
       <category domain="https://jroliveira.net/tags/csharp/">csharp</category>
       
@@ -391,11 +391,11 @@
       
       <category domain="https://jroliveira.net/tags/delphi/">delphi</category>
       
-      <category domain="https://jroliveira.net/tags/json/">json</category>
-      
       <category domain="https://jroliveira.net/tags/datasnap/">datasnap</category>
       
       <category domain="https://jroliveira.net/tags/jquery/">jquery</category>
+      
+      <category domain="https://jroliveira.net/tags/json/">json</category>
       
       <category domain="https://jroliveira.net/tags/php/">php</category>
       
@@ -445,9 +445,9 @@
       
       <category domain="https://jroliveira.net/tags/delphi/">delphi</category>
       
-      <category domain="https://jroliveira.net/tags/generics/">generics</category>
-      
       <category domain="https://jroliveira.net/tags/json/">json</category>
+      
+      <category domain="https://jroliveira.net/tags/generics/">generics</category>
       
       
       <comments>https://jroliveira.net/pt/json-javascript-object-notation-e-generics-no-delphi/#disqus_thread</comments>
