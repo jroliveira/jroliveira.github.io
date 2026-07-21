@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="450" viewBox="0 0 600 450">
+  <defs>
+    <pattern id="h" width="14" height="14" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <rect width="14" height="14" fill="#f7f7f7"/>
+      <rect width="7" height="14" fill="#ececec"/>
+    </pattern>
+  </defs>
+  <rect width="600" height="450" fill="url(#h)"/>
+  <text x="50%" y="50%" fill="#8a929b" font-family="JetBrains Mono, monospace" font-size="20" text-anchor="middle" dominant-baseline="middle">sample drawing</text>
+</svg>
